@@ -9,7 +9,7 @@ body {
 header {
     width: 100%;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: gray;
 }
 
 header :hover {
@@ -83,13 +83,18 @@ header > .right {
     background-size: cover;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
 footer {
     width: 100%;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: gray;
 }
 
 footer :hover {
@@ -98,7 +103,7 @@ footer :hover {
 
 footer p {
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     padding: 10px;
 }
 
