@@ -1,0 +1,113 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  margin: 0%;
+}
+
+header {
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+header :hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+header a {
+    color: white;
+    font-size: 20px;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+header > .left {
+    float: left;
+}
+
+header > .right {
+    float: right;
+}
+
+#home {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../image/background.jpg");
+    background-size: cover;
+}
+
+#about {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../image/background.jpg");
+    background-size: cover;
+}
+
+#skils {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../image/background.jpg");
+    background-size: cover;
+}
+
+#contact {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../image/background.jpg");
+    background-size: cover;
+}
+
+footer {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+footer :hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+footer p {
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+footer > .left {
+    float: left;
+}
+
+@media screen and (max-width :400px) {
+    header a.left, header a.right {
+        padding: 10px 10px;
+    }
+}
