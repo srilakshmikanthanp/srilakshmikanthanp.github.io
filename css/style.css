@@ -54,7 +54,7 @@ body {
 #home .myimg {
   width: 200px;
   height: 200px;
-  margin-top: 10%;
+  margin-top: 120px;
   margin-bottom: 10px;
   border-radius: 170px;
 }
@@ -81,7 +81,10 @@ body {
 }
 
 #home .arrow {
-  margin-top: 80px;
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -50%);
 }
 
 #home .arrow a {
