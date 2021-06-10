@@ -44,6 +44,7 @@ body {
 }
 
 #home {
+  position: static;
   text-align: center;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/home.jpg");
   background-size: cover;
@@ -51,48 +52,53 @@ body {
   background-position: center;
 }
 
-#home .myimg {
+#home .content {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#home .content .myimg {
   width: 200px;
   height: 200px;
-  margin-top: 120px;
   margin-bottom: 10px;
   border-radius: 170px;
 }
 
-#home .myname {
+#home .content .myname {
   margin: 5px;
   font-size: 50px;
   color: white;
 }
 
-#home .mylinks {
+#home .content .mylinks {
   margin: 20px;
   font-size: large;
 }
 
-#home .mylinks a {
+#home .content .mylinks a {
   color: white;
   text-decoration: none;
   padding: 5px;
 }
 
-#home .mylinks a :hover {
+#home .content .mylinks a :hover {
   color:aqua;
 }
 
-#home .arrow {
-  position: absolute;
-  left: 50%;
-  top: 80%;
-  transform: translate(-50%, -50%);
+#home .content .arrow {
+  margin-top: 10%;
 }
 
-#home .arrow a {
+#home .content .arrow a {
   color: white;
   text-decoration: none;
 }
 
-#home .arrow a :hover {
+#home .content .arrow a :hover {
   color: aqua;
 }
 
@@ -155,6 +161,7 @@ body {
   position: absolute;
   left: 50%;
   top: 80%;
+  transform: translate(-50%, -50%);
 }
 
 #tools .arrow a {
