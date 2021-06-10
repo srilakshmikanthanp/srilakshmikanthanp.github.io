@@ -1,2 +1,1 @@
-# srilakshmikanthanp.github.io
-Personal Website
+# Personal Website
