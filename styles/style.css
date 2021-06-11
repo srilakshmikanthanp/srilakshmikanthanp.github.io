@@ -24,7 +24,6 @@ body {
 #home .content {
   position: absolute;
   width: 90%;
-  padding: 10px;
   height: auto;
   top: 50%;
   left: 50%;
@@ -87,13 +86,12 @@ body {
 #about .content {
   position: inherit;
   text-align: center;
-  padding: 10%;
-  width: auto;
+  width: 90%;
   height: auto;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0));
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 
 #about .content .myimg {
@@ -121,7 +119,6 @@ body {
 
 #tools .content {
   position: inherit;
-  padding: 10%;
   width: auto;
   height: auto;
   left: 50%;
