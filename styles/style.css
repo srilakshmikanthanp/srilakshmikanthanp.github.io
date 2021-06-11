@@ -11,42 +11,11 @@ body {
   height: 100vh;
 }
 
-header {
-  position: fixed;
-  width: 100%;
-  height: 50px;
-  font-size: x-large;
-  background-color: rgb(44, 44, 44);
-  box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
-}
-
-header :hover{
-  color: aqua;
-}
-
-header .left {
-  padding-left: 5%;
-  padding-top: 5px;
-  margin-top: 5px;
-  float: left;
-}
-
-header .right {
-  padding-right: 5%;
-  padding-top: 5px;
-  margin-top: 5px;
-  float: right;
-}
-
-header a {
-  color: white;
-  text-decoration: none;
-}
-
 #home {
   position: static;
   text-align: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/home.jpg");
+  background-color: #120e16;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../image/bg-sd.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -54,7 +23,8 @@ header a {
 
 #home .content {
   position: absolute;
-  width: 100%;
+  width: 90%;
+  padding: 10px;
   height: auto;
   top: 50%;
   left: 50%;
@@ -69,9 +39,11 @@ header a {
 }
 
 #home .content .myname {
-  margin: 5px;
+  text-transform: uppercase;
+  font-family: sans-serif;
   font-size: 50px;
   color: white;
+  margin-bottom: 30px;
 }
 
 #home .content .mylinks {
@@ -80,31 +52,33 @@ header a {
 }
 
 #home .content .mylinks a {
-  color: white;
+  color: rgb(146, 146, 146);
   text-decoration: none;
   padding: 5px;
 }
 
 #home .content .mylinks a :hover {
-  color:aqua;
+  color:white;
 }
 
-#home .content .arrow {
-  margin-top: 10%;
+#home .arrow {
+  position: relative;
+  top: 90%;
 }
 
-#home .content .arrow a {
-  color: white;
+#home .arrow a {
+  color: rgb(146, 146, 146);
   text-decoration: none;
 }
 
-#home .content .arrow a :hover {
-  color: aqua;
+#home .arrow a :hover {
+  color:white;
 }
 
 #about {
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/about.jpg");
+  background: #1a171e;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../image/bg-sd.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -136,8 +110,10 @@ header a {
 }
 
 #tools {
+  text-align: center;
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/tools.jpg");
+  background: #120e16;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../image/bg-sd.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -145,38 +121,47 @@ header a {
 
 #tools .content {
   position: inherit;
-  text-align: center;
   padding: 10%;
   width: auto;
   height: auto;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0));
   font-size: x-large;
   color: white;
 }
 
 #tools .arrow {
   position: absolute;
-  left: 50%;
   top: 80%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
 #tools .arrow a {
-  color: white;
+  color: rgb(146, 146, 146);;
   text-decoration: none;
 }
 
 #tools .arrow a :hover {
-  color: aqua;
+  color: white;
 }
 
 footer {
   text-align: center;
-  color: white;
   width: 100%;
   height: 50px;
-  background-color: rgb(44, 44, 44);;
+  color: white;
+  background-color: #120e16;
+}
+
+
+@media only screen and (max-width: 450px) {
+  #home .content .myname {
+    font-size: 35px;
+  }
+
+  #home .content .mylinks {
+    font-size: medium;
+  }
 }
