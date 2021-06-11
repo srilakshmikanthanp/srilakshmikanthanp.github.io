@@ -25,6 +25,7 @@ body {
   position: absolute;
   width: 90%;
   height: auto;
+  max-height: 90vh;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -88,6 +89,7 @@ body {
   text-align: center;
   width: 90%;
   height: auto;
+  max-height: 90vh;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -118,8 +120,9 @@ body {
 
 #tools .content {
   position: inherit;
-  width: auto;
+  width: 90%;
   height: auto;
+  max-height: 90vh;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
