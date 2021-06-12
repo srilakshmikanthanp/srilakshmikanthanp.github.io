@@ -2,6 +2,47 @@ html {
   scroll-behavior: smooth;
 }
 
+header {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  left:0%;
+  top:0%;
+  z-index: 1;
+  background-color: rgb(18,14,22);
+  box-shadow: 0px 0px 15px rgb(152, 54, 250);
+}
+
+header .logo a img {
+  position: fixed;
+  max-height: 40px;
+  max-width: 40px;
+  left: 10%;
+  padding-top: 5px;
+}
+
+header .navi {
+  position: fixed;
+  right: 10%;
+  font-size: large;
+  float :right;
+}
+
+header .navi ul a {
+  color: white;
+  text-decoration: none;
+} 
+
+header .navi ul :hover {
+  color: #81f;
+}
+
+header .navi ul li {
+  display: inline;
+  padding: 10px;
+}
+
 body {
   margin: 0%;
 }
@@ -31,13 +72,6 @@ body {
   transform: translate(-50%, -50%);
 }
 
-#home .content .myimg {
-  width: 200px;
-  height: 200px;
-  margin-bottom: 10px;
-  border-radius: 170px;
-}
-
 #home .content .myname {
   text-transform: uppercase;
   font-family: sans-serif;
@@ -52,32 +86,40 @@ body {
 }
 
 #home .content .mylinks a {
-  color: rgb(146, 146, 146);
+  color: white;
   text-decoration: none;
   padding: 5px;
 }
 
 #home .content .mylinks a :hover {
-  color:white;
+  color:#81f;
 }
 
 #home .arrow {
   position: relative;
+  width : 45px;
+  height : 45px;
   top: 80%;
+  left: 50%;
+  padding: 10px;
+  transform: translate(-50%, -50%);
+  background-color: rgb(18,14,22, 0.95);
+  box-shadow: 0 0 15px rgb(152, 54, 250);
+  border-radius: 10px;
 }
 
 #home .arrow a {
-  color: rgb(146, 146, 146);
+  color: white;
   text-decoration: none;
 }
 
 #home .arrow a :hover {
-  color:white;
+  color:#81f;
 }
 
 #about {
-  position: relative;
-  background: #1a171e;
+  position: static;
+  background: rgb(18,14,22);
   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../image/bg-sd.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -85,14 +127,18 @@ body {
 }
 
 #about .content {
-  position: inherit;
+  position: relative;
   text-align: center;
-  width: 90%;
+  width: 80%;
   height: auto;
+  padding: 10px;
+  min-height: 50%;
   max-height: 90vh;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  background-color: rgb(18,14,22, 0.95);
+  border-radius: 10px;
 }
 
 #about .content .myimg {
@@ -103,15 +149,15 @@ body {
 }
 
 #about .content .brief {
-  font-size: x-large;
+  font-size: 150%;
   color: white;
   margin: 50px;
 }
 
 #tools {
   text-align: center;
-  position: relative;
-  background: #120e16;
+  position: static;
+  background: rgb(18,14,22);
   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../image/bg-sd.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -119,31 +165,31 @@ body {
 }
 
 #tools .content {
-  position: inherit;
-  width: 90%;
+  position: relative;
+  width: 80%;
   height: auto;
   max-height: 90vh;
+  padding: 15px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgb(18,14,22, 0.95);
+  border-radius: 10px;
+}
+
+#tools .content .text {
   font-size: x-large;
-  color: white;
+  padding: 20px;
 }
 
-#tools .arrow {
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+#tools .content .stats {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#tools .arrow a {
-  color: rgb(146, 146, 146);;
-  text-decoration: none;
-}
-
-#tools .arrow a :hover {
-  color: white;
+#tools .content .stats img {
+  max-width: 80%;
 }
 
 footer {
@@ -152,15 +198,44 @@ footer {
   height: 50px;
   color: white;
   background-color: #120e16;
+  box-shadow: 0px -1px 15px rgb(152, 54, 250);
 }
 
+footer .text {
+  padding-top: 15px;
+}
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 650px) {
   #home .content .myname {
-    font-size: 35px;
+    font-size: 28px;
   }
 
   #home .content .mylinks {
-    font-size: medium;
+    font-size: 10px;
   }
+}
+
+@media only screen and (max-width: 380px) {
+  #home .content .myname {
+    font-size: 20px;
+  }
+
+  #home .content .mylinks {
+    font-size: 10px;
+  }
+}
+
+/* This part contains non standard css styles */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(18,14,22);
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #81f;
+  border-radius: 5px;
 }
