@@ -215,19 +215,27 @@ footer .text {
 
 @media only screen and (max-width: 650px) {
   #home .content .myname {
-    font-size: 28px;
+    font-size: 40px;
   }
 
   #home .content .mylinks {
-    font-size: 10px;
+    font-size: 20px;
   }
 
-  header .navi .line {
-    display: none;
+  #about .content .brief {
+    font-size: 25px;
+  }
+
+  #tools .content .text {
+    font-size: 25px;
   }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 400px) {
+  header .navi .line {
+    display: none;
+  }
+
   #home .content .myname {
     font-size: 25px;
   }
@@ -236,8 +244,12 @@ footer .text {
     font-size: 10px;
   }
 
-  header .navi .line {
-    display: none;
+  #about .content .brief {
+    font-size: 15px;
+  }
+
+  #tools .content .text {
+    font-size: 15px;
   }
 }
 
