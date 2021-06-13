@@ -108,9 +108,9 @@ body {
   left: 50%;
   padding: 10px;
   transform: translate(-50%, -50%);
-  background-color: rgb(18,14,22, 0.95);
-  box-shadow: 0 0 15px rgb(152, 54, 250);
-  border-radius: 10px;
+  background-color: rgb(18,14,22, 0.5);
+  box-shadow: 0 0 15px #777777;
+  border-radius: 100px;
 }
 
 #home .arrow a {
@@ -183,7 +183,6 @@ body {
   color: white;
   background-color: rgb(18,14,22, 0.95);
   border-radius: 10px;
-  background-color: rgb(18,14,22);
   box-shadow: 0px 0px 15px #777777;
 }
 
@@ -222,6 +221,10 @@ footer .text {
   #home .content .mylinks {
     font-size: 10px;
   }
+
+  header .navi .line {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 380px) {
@@ -231,6 +234,10 @@ footer .text {
 
   #home .content .mylinks {
     font-size: 10px;
+  }
+
+  header .navi .line {
+    display: none;
   }
 }
 
