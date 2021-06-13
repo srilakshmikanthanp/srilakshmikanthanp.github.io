@@ -229,6 +229,12 @@ footer .text {
   }
 }
 
+@media only screen and (max-width: 450px) {
+  header .navi .line{
+    display: none;
+  }
+}
+
 /* This part contains non standard css styles */
 
 ::-webkit-scrollbar {
