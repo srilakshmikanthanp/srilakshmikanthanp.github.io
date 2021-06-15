@@ -1,0 +1,13 @@
+@media only screen and (max-width: 500px) {
+    #home .container #nameprefix {
+        font-size: 120%;
+    }
+
+    #home .container #name {
+        font-size: 150%;
+    }
+
+    #home .container #namepostfix {
+        font-size: 130%;
+    }
+}

@@ -1,91 +1,106 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
   <head>
-    <script src="https://kit.fontawesome.com/152aa367d8.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="keywords" content="srilakshmikanthanp, Sri Lakshmi Kanthan P" />
-    <link rel="icon" href="image/logo.png">
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" href="image/logo.png" />
+    <link rel="stylesheet" href="styles/main.css" />
     <title>srilakshmikanthanp</title>
   </head>
-  
   <header>
-    <div class="logo">
-      <a href="#home"><img src="image/logo.png"></a>
-    </div>
-    <div class="navi">
+    <ul>
+      <li>
+        <a href="#home"><img src="image/logo.png" /></a>
+      </li>
+    </ul>
+    <nav>
       <ul>
-        <li><a href="#home">Intro</a></li>
-        <div class="line">-</div>
-        <li><a href="#about">About</a></li>
-        <div class="line">-</div>
-        <li><a href="#tools">Tools</a></li>
+        <li class="text"><a href="#home">Intro</a></li>
+        <li class="line"></li>
+        <li class="text"><a href="#about">About</a></li>
+        <li class="line"></li>
+        <li class="text"><a href="#tools">Tools</a></li>
       </ul>
-    </div>
+    </nav>
   </header>
-  
   <body>
-    <section class="page" id="home">
-      <div class="content">
-        <div class="myname">
-          <b>sri lakshmi kanthan</b>
-        </div>
-        <div class="mylinks">
-          <a href="mailto:srilakshmikanthanp@gmail.com" target="_blank">
-            <i class="fas fa-envelope fa-2x"></i>
-          </a>
-          <a href="https://www.github.com/srilakshmikanthanp"  target="_blank">
-            <i class="fab fa-github fa-2x"></i>
-          </a>
-          <a href="https://stackoverflow.com/users/12473258/srilakshmikanthanp?tab=profile" target="_blank">
-            <i class="fab fa-stack-overflow fa-2x"></i>
-          </a>
-          <a href="https://twitter.com/srilaxmikanthan" target="_blank">
-            <i class="fab fa-twitter fa-2x"></i>
-          </a>
-          <a href="https://www.facebook.com/sri.l.kanthan.1/" target="_blank">
-            <i class="fab fa-facebook fa-2x"></i>
-          </a>
-          <a href="https://www.instagram.com/srilakshmikanthanp/" target="_blank">
-            <i class="fab fa-instagram fa-2x"></i>
-          </a>
-        </div>
+    <section id="home">
+      <div id="links">
+        <a href="mailto:srilakshmikanthanp@gmail.com" target="_blank">
+          <i data-feather="mail"></i>
+        </a>
+        <a href="https://www.github.com/srilakshmikanthanp" target="_blank">
+          <i data-feather="github"></i>
+        </a>
+        <a href="https://twitter.com/srilaxmikanthan" target="_blank">
+          <i data-feather="twitter"></i>
+        </a>
+        <a href="https://www.facebook.com/sri.l.kanthan.1/" target="_blank">
+          <i data-feather="facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/srilakshmikanthanp/" target="_blank">
+          <i data-feather="instagram"></i>
+        </a>
       </div>
-      <div class="arrow">
-        <a href="#about"><i class="fas fa-angle-double-down fa-3x"></i></i></a>
-      </div>
-    </section>
-    <section class="page" id="about">
-      <div class="content">
-        <img src="image/srilakshmikanthanp.jpg" alt="srilakshmikanthanp" class="myimg"/>
-        <div class="brief">
-          Hi! &#128075; I am Sri Lakshmi Kanthan, a Student From Tamilnadu. Currently Studing
-          Engineering in Anna University. I am intrested in Programing and Mathematics! &#128523;
+      <div class="container">
+        <div id="nameprefix">
+          <b>Hi! &#128075; <u>My Name is</u>,</b>
+        </div>
+        <div id="name">
+          <b>Sri Lakshmi Kanthan</b>
+        </div>
+        <div id="namepostfix">
+          <b>I love Programming and Math !</b>
         </div>
       </div>
     </section>
-    <section class="page" id="tools">
-      <div class="content">
-        <div class="text">
-          I can come up with new tools or languages within few months, 
-          But Currently i know some of low level, both front and backend 
-          languages but here is some most used language by me
-        </div>
-        <div class="stats">
-          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=srilakshmikanthanp&theme=synthwave&layout=compact&hide_border=hide_border&border_radius=0&hide_title=hide_title&bg_color=120e16"/>
-        </div>
-        <div class="text">
-          This is not languages that i know but it is most used languages in github
+    <section id="about">
+      <div class="container">
+        <img
+          src="image/srilakshmikanthanp.jpg"
+          alt="sri lakshmi kanthan"
+          id="myimg"
+        />
+        <div>
+          <b>
+            <h1>&lt;About Me/&gt;</h1>
+            Hi! &#128075;, I am Sri Lakshmi kanthan form TamilNadu, Who love
+            Mathematics and Programing.<br />
+            I am currently studing Information Technology in University Collage
+            of Engineering, Trichy.
+            <br /><br />
+            I don't want to restrict me into some specfic part of Programming
+            thechnology insted I will<br />
+            do whatever i want or dpending upon the sitution.
+            <br /><br />
+            I also like math and physics. It is always fun with science and best
+            entertainment!
+          </b>
         </div>
       </div>
     </section>
-  </body>  
-  
+    <section id="tools">
+      <div class="container">
+        <div>
+          <b>
+          I can come up with new tools or languages within few months, <br>
+          But Currently i know some of low level, both front and backend <br>
+          languages but here is some most used language by me This is not <br>
+          languages that i know but it is most used languages in github
+          </b>
+        </div>
+        <img
+        src="https://github-readme-stats.vercel.app/api/top-langs/?username=srilakshmikanthanp&theme=synthwave&layout=compact&hide_border=hide_border&border_radius=0&hide_title=hide_title&bg_color=120e16"
+        />
+      </div>
+    </section>
+    <script>
+      feather.replace();
+    </script>
+  </body>
   <footer>
-      <div class="text">
-        Copyright &copy; 2021 Sri Lakshmi Kanthan P
-      </div>
-    </footer>
+    <p>copyright &copy; 2021 Sri Lakshmi Kanthan</p>
+  </footer>
 </html>
