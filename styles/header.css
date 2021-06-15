@@ -29,6 +29,7 @@ header nav {
     float: right;
     color: white;
     position: relative;
+    margin-top: 5px;
 }
 
 header nav li.text {
