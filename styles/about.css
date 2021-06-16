@@ -14,20 +14,23 @@
 }
 
 #about .container {
-  max-width: 90%;
+  max-width: 80%;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
   position: relative;
+  padding: 10px;
   justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 #about .container h1 {
+  margin-top: 0;
   text-align: center;
 }
 
 #about .container div {
+  max-width: 500px;
   text-align: left;
   color: white;
   padding: 20px;

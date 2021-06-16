@@ -21,6 +21,19 @@
   overflow-y: scroll;
 }
 
+#tools .container ul::before {
+  content: "Tools";
+  display: block;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  color: white;
+  background-color: #81f;
+}
+
 #tools .container ul {
   padding: 0;
 }
@@ -54,7 +67,7 @@
   bottom: 0;
   position: relative;
   padding: 10px;
-  left: 50px;
+  left: 40px;
   background-color: #81f;
 }
 
