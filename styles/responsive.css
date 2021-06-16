@@ -11,3 +11,29 @@
         font-size: 130%;
     }
 }
+
+@media only screen and (max-width: 400px) {
+    #tools .container {
+        min-width: 300px;
+    }
+
+    #tools .container ul li {
+        width: 7px;
+    }
+
+    #tools .container ul li::after {
+        width: 20px;
+    }
+
+    #tools .container ul li div {
+        max-width: 70px;
+    }
+
+    #tools .container ul li:nth-child(even) div {
+        left: 40px;
+    }
+      
+    #tools .container ul li:nth-child(odd) div {
+        left: -120px;
+    }
+}
