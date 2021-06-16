@@ -1,4 +1,12 @@
 @media only screen and (max-width: 500px) {
+    header nav li.text {
+        font-size: 100%;
+    }
+
+    header nav li.line {
+        width: 15px;
+    }
+
     #home .container #nameprefix {
         font-size: 120%;
     }
