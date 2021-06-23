@@ -46,6 +46,10 @@ header nav a:hover {
   transition: border-color 0.5s;
 }
 
+header nav a#a-img {
+  border: none;
+}
+
 header nav .line {
   width: 50px;
   height: 1px;
@@ -134,36 +138,137 @@ main {
   background-repeat: repeat;
 }
 
-@media only screen and (max-width: 768px) {
+#tools .list-container {
+  height: auto;
+  width: auto;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+#tools ul {
+  list-style-type: none;
+  padding: 0%;
+}
+
+#tools ul::before {
+  width: 200px;
+  padding: 10px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  content: "Tools";
+  background-color: #81f;
+  border-radius: 10px;
+}
+
+#tools ul li {
+  width: 10px;
+  background-color: #81f;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding-top: 80px;
+}
+
+#tools ul li::after {
+  width: 40px;
+  height: 40px;
+  content: "";
+  left: 50%;
+  bottom: 0%;
+  transform: translateX(-50%);
+  position: absolute;
+  border-radius: 100px;
+  background-color: #81f;
+}
+
+#tools ul li:nth-child(odd) div {
+  width: 100px;
+  background-color: #81f;
+  position: absolute;
+  right: 50px;
+  bottom: 0;
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#tools ul li:nth-child(even) div {
+  width: 100px;
+  background-color: #81f;
+  position: absolute;
+  left: 50px;
+  bottom: 0;
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 10px;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  color: white; 
+  color: whites;
+  align-items: center;
+  justify-content: center;
+  background-color: #120e16;
+  box-shadow: 0px 0px 15px #81f;
+}
+
+@media (max-width: 768px) {
   header nav .line {
     display: none;
   }
 }
 
-@media only screen and (max-width: 800px) {
-  #home #name-line-1 {
-    font-size: 120%;
+@media (max-width: 300px) {
+  #tools ul li:nth-child(even) div {
+    width: 60px !important;
   }
 
-  #home #name-line-2 {
-    font-size: 150%;
-  }
-
-  #home #name-line-3 {
-    font-size: 130%;
+  #tools ul li:nth-child(odd) div {
+    width: 60px !important;
   }
 }
 
-@media only screen and (max-width: 350px) {
+@media (max-width: 400px) {
+  #tools ul li:nth-child(even) div {
+    width: 80px !important;
+  }
+
+  #tools ul li:nth-child(odd) div {
+    width: 80px !important;
+  }
+}
+
+@media (max-width: 350px) {
   #home #name-line-1 {
-    font-size: 90%;
+    font-size: 90% !important;
   }
 
   #home #name-line-2 {
-    font-size: 130%;
+    font-size: 130% !important;
   }
 
   #home #name-line-3 {
-    font-size: 90%;
+    font-size: 90% !important;
+  }
+}
+
+@media (max-width: 800px) {
+  #home #name-line-1 {
+    font-size: 120% !important;
+  }
+
+  #home #name-line-2 {
+    font-size: 150% !important;
+  }
+
+  #home #name-line-3 {
+    font-size: 130% !important;
   }
 }
