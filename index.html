@@ -2,107 +2,152 @@
 
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        feather.replace();
+      });
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css?​family=Oxygen"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="keywords" content="srilakshmikanthanp, Sri Lakshmi Kanthan P" />
     <link rel="icon" href="image/logo.png" />
     <link rel="stylesheet" href="styles/main.css" />
     <title>srilakshmikanthanp</title>
   </head>
-  <header>
-    <ul>
-      <li>
-        <a href="#home"><img src="image/logo.png" /></a>
-      </li>
-    </ul>
-    <nav>
-      <ul>
-        <li class="text"><a href="#home">Intro</a></li>
-        <li class="line"></li>
-        <li class="text"><a href="#about">About</a></li>
-        <li class="line"></li>
-        <li class="text"><a href="#tools">Tools</a></li>
-      </ul>
-    </nav>
-  </header>
   <body>
-    <section id="home">
-      <div id="links">
-        <a href="mailto:srilakshmikanthanp@gmail.com" target="_blank">
-          <i data-feather="mail"></i>
-        </a>
-        <a href="https://www.github.com/srilakshmikanthanp" target="_blank">
-          <i data-feather="github"></i>
-        </a>
-        <a href="https://twitter.com/srilaxmikanthan" target="_blank">
-          <i data-feather="twitter"></i>
-        </a>
-        <a href="https://www.facebook.com/sri.l.kanthan.1/" target="_blank">
-          <i data-feather="facebook"></i>
-        </a>
-        <a href="https://www.instagram.com/srilakshmikanthanp/" target="_blank">
-          <i data-feather="instagram"></i>
-        </a>
-      </div>
-      <div class="container">
-        <div id="nameprefix">
-          <b>Hi! &#128075; <u>My Name is</u>,</b>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-md navbar-light">
+        <div class="container">
+          <a href="#home" class="navbar-brand">
+            <img id="logo" src="image/logo.png" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarToggler"
+            aria-controls="navbarToggler"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i data-feather="align-justify"></i>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
+            <div class="navbar-nav">
+              <a href="#home" class="nav-link nav-content">Home</a>
+              <div class="line align-self-center"></div>
+              <a href="#about" class="nav-link nav-content">About</a>
+              <div class="line align-self-center"></div>
+              <a href="#tools" class="nav-link nav-content">Tools</a>
+            </div>
+          </div>
         </div>
-        <div id="name">
-          <b>Sri Lakshmi Kanthan</b>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <div class="container py-5">
+          <div class="row row-cols-1 g-2">
+            <div class="col text-end">
+              <a href="mailto:srilakshmikanthanp@gmail.com" target="_blank">
+                <i data-feather="mail"></i>
+              </a>
+            </div>
+            <div class="col text-end">
+              <a href="https://www.github.com/srilakshmikanthanp" target="_blank">
+                <i data-feather="github"></i>
+              </a>
+            </div>
+            <div class="col text-end">
+              <a href="https://twitter.com/srilaxmikanthan" target="_blank">
+                <i data-feather="twitter"></i>
+              </a>
+            </div>
+            <div class="col text-end">
+              <a href="https://www.facebook.com/sri.l.kanthan.1/" target="_blank">
+                <i data-feather="facebook"></i>
+              </a>
+            </div>
+            <div class="col text-end">
+              <a
+                href="https://www.instagram.com/srilakshmikanthanp/"
+                target="_blank"
+              >
+                <i data-feather="instagram"></i>
+              </a>
+            </div>
+          </div>
         </div>
-        <div id="namepostfix">
-          <b>I love Programming and Math !</b>
+        <div class="container py-2">
+          <div class="row">
+            <div class="col text-start" id="name-line-1">
+              Hello, there! 👋 I'm
+            </div>
+          </div>
+          <div class="row">
+            <div class="col text-start" id="name-line-2">
+              Sri Lakshmi Kanthan
+            </div>
+          </div>
+          <div class="row">
+            <div class="col text-start" id="name-line-3">
+              I love Math and Programming !
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-    <section id="about">
-      <div class="container">
-        <img
-          src="image/srilakshmikanthanp.jpg"
-          alt="sri lakshmi kanthan"
-          id="myimg"
-        />
-        <div>
-          <b>
-            <h1>About Me</h1>
-            Hi! &#128075;, I am Sri Lakshmi kanthan form TamilNadu, Who love
-            Mathematics and Programing. I am currently studing Information 
-            Technology in University Collage of Engineering, Trichy.
-            <br /><br />
-            I don't want to restrict me into some specfic part of Programming
-            thechnology insted I will do whatever i want or dpending upon 
-            the sitution.
-            <br /><br />
-            I also like math and physics. It is always fun with science and best
-            entertainment!
-            <br /><br />
-            I like to use Windows <i style="color: aqua;" class="fa fa-windows" aria-hidden="true"></i>
-          </b>
+      </section>
+      <section id="about">
+        <div class="container">
+          <div class="row text-center py-2 px-5">
+            <div class="col">
+              <h1><b>About Me</b></h1>
+            </div>
+          </div>
+          <div class="row text-center py-2 px-5">
+            <div class="col">
+              <img src="image/srilakshmikanthanp.jpg" alt="Sri Lakshmi Kanthan" class="img-fulid me-circle"/>
+            </div>
+          </div>
+          <div class="row py-2 px-5">
+            <div class="col text-center">
+              <b>Hello there! &#128075;, I am Sri Lakshmi kanthan form TamilNadu, Who love
+              Mathematics and Programing. I am currently studing Information 
+              Technology in University Collage of Engineering, Trichy.
+              I don't want to restrict me into some specfic part of Programming
+              technology insted I will do whatever i want or depending upon 
+              the sitution. I also like math and physics. It is always fun with science and best
+              entertainment!. I like to use Windows 
+              <i style="color: aqua;" class="fa fa-windows" aria-hidden="true"></i></b>
+            </div>
+          </div>
+          </div>
         </div>
-      </div>
-    </section>
-    <section id="tools">
-      <div class="container">
-        <ul>
-          <li><div>C</div></li>
-          <li><div>C++</div></li>
-          <li><div>Asm 64</div></li>
-          <li><div>git/github</div></li>
-          <li><div>Arduino</div></li>
-          <li><div>Java</div></li>
-          <li><div>Go</div></li>
-          <li><div>Python</div></li>
-          <li><div>Html/Css</div></li>
-        </ul>
-      </div>
-    </section>
-    <script>
-      feather.replace();
-    </script>
+      </section>
+      <section id="tools">
+  
+      </section>
+    </main>
+    <footer>
+      
+    </footer>
   </body>
-  <footer>
-    <p>copyright &copy; 2021 Sri Lakshmi Kanthan</p>
-  </footer>
 </html>

@@ -1,9 +1,169 @@
-@import url("html.css");
-@import url("body.css");
-@import url("scrollbar.css");
-@import url("header.css");
-@import url("home.css");
-@import url("about.css");
-@import url("tools.css");
-@import url("responsive.css");
-@import url("footer.css");
+/**
+ * Copyright (c) 2021 Sri Lakshmi Kanthan P
+ * 
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), rgb(18, 14, 22);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #81f;
+  border-radius: 5px;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: #81f !important;
+}
+
+header nav {
+  background-color: #120e16;
+  box-shadow: 0px 0px 15px #81f;
+}
+
+header nav a {
+  border: solid #120e16;
+}
+
+header nav a:hover {
+  color: white !important;
+  border-color: #81f;
+  transition: border-color 0.5s;
+}
+
+header nav .line {
+  width: 50px;
+  height: 1px;
+  background-color: #81f;
+}
+
+header nav button {
+  color: white !important;
+}
+
+header nav img#logo {
+  width: 35px;
+  height: 35px;
+}
+
+main {
+  margin: 0%;
+  width: 100%;
+  font-family: Oxygen, sans-serif;
+  background-color: #120e16;
+}
+
+#home {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  padding-top: 75px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  url("../image/bg-sd.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+#home #name-line-1 {
+  color: white;
+  font-size: 160%;
+  font-weight: bold;
+}
+
+#home #name-line-2 {
+  color: white;
+  font-size: 250%;
+  font-weight: bold;
+}
+
+#home #name-line-3 {
+  color: white;
+  font-size: 160%;
+  font-weight: bold;
+}
+
+#about {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding-top: 75px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  url("../image/bg-sd.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+#about img.me-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+#tools {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding-top: 75px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  url("../image/bg-sd.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+@media only screen and (max-width: 768px) {
+  header nav .line {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #home #name-line-1 {
+    font-size: 120%;
+  }
+
+  #home #name-line-2 {
+    font-size: 150%;
+  }
+
+  #home #name-line-3 {
+    font-size: 130%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  #home #name-line-1 {
+    font-size: 90%;
+  }
+
+  #home #name-line-2 {
+    font-size: 130%;
+  }
+
+  #home #name-line-3 {
+    font-size: 90%;
+  }
+}
