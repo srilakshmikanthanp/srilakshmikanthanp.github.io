@@ -20,28 +20,25 @@
 
 html, body {
   scroll-behavior: smooth;
+  background-color: #120e16;
 }
 
 a {
   color: white !important;
-  text-decoration: none !important;
-}
-
-a:hover {
-  color: #81f !important;
+  text-decoration: none;
 }
 
 header nav {
   background-color: #120e16;
-  box-shadow: 0px 0px 15px #81f;
+  box-shadow: 0px 0px 15px rgb(70, 60, 80);
 }
 
 header nav a {
+  color: white;
   border: solid #120e16;
 }
 
 header nav a:hover {
-  color: white !important;
   border-color: #81f;
   transition: border-color 0.5s;
 }
@@ -82,6 +79,11 @@ main {
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
+}
+
+#home a :hover {
+  color: #81f;
+  transition: color 0.5s;
 }
 
 #home #name-line-1 {
@@ -138,73 +140,86 @@ main {
   background-repeat: repeat;
 }
 
-#tools .list-container {
+#tools #tool-content {
+  max-width: 80%;
+}
+
+#tools .tool {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  border-radius: 50px;
+  background-color: #81f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 10px #81f;
+}
+
+#tools .tool:hover {
+  transform:scale(1.05);
+}
+
+#repos {
+  width: 100%;
   height: auto;
-  width: auto;
-  max-height: 60vh;
-  overflow-y: auto;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding-top: 75px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  url("../image/bg-sd.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
 }
 
-#tools ul {
-  list-style-type: none;
-  padding: 0%;
+#repos #repos-content {
+  padding: 20px;
 }
 
-#tools ul::before {
-  width: 200px;
-  padding: 10px;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  display: block;
-  content: "Tools";
-  background-color: #81f;
+#repos a.repo {
+  width: 320px;
+  margin: 20px;
+  padding: 20px;
+  overflow: hidden;
   border-radius: 10px;
+  background-color: #81f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-#tools ul li {
-  width: 10px;
-  background-color: #81f;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  padding-top: 80px;
+#repos a.repo:hover {
+  color: white;
+  transform:scale(1.05);
+  box-shadow: 0px 0px 15px #81f;
 }
 
-#tools ul li::after {
-  width: 40px;
-  height: 40px;
-  content: "";
-  left: 50%;
-  bottom: 0%;
-  transform: translateX(-50%);
-  position: absolute;
-  border-radius: 100px;
-  background-color: #81f;
+#repos a.repo .top_sec {
+  max-width: 300px;
+  font-size: larger;
+  font-weight: bold;
+  margin: 5px;
 }
 
-#tools ul li:nth-child(odd) div {
-  width: 100px;
-  background-color: #81f;
-  position: absolute;
-  right: 50px;
-  bottom: 0;
-  padding: 10px;
-  display: inline-block;
-  text-align: center;
-  border-radius: 10px;
+#repos a.repo .mid_sec {
+  max-width: 300px;
+  font-size: medium;
+  margin: 5px;
 }
 
-#tools ul li:nth-child(even) div {
-  width: 100px;
-  background-color: #81f;
-  position: absolute;
-  left: 50px;
-  bottom: 0;
-  padding: 10px;
-  display: inline-block;
-  text-align: center;
-  border-radius: 10px;
+#repos a.repo .bot_sec {
+  max-width: 300px;
+  display: flex;
+  flex-direction: row;
+  font-size: small;
+  margin: 5px;
+}
+
+#repos a.repo .bot_sec div {
+  flex-grow: 1;
 }
 
 footer {
@@ -225,50 +240,31 @@ footer {
   }
 }
 
-@media (max-width: 300px) {
-  #tools ul li:nth-child(even) div {
-    width: 60px !important;
-  }
-
-  #tools ul li:nth-child(odd) div {
-    width: 60px !important;
-  }
-}
-
-@media (max-width: 400px) {
-  #tools ul li:nth-child(even) div {
-    width: 80px !important;
-  }
-
-  #tools ul li:nth-child(odd) div {
-    width: 80px !important;
-  }
-}
 
 @media (max-width: 350px) {
   #home #name-line-1 {
-    font-size: 90% !important;
+    font-size: 90%;
   }
 
   #home #name-line-2 {
-    font-size: 130% !important;
+    font-size: 130%;
   }
 
   #home #name-line-3 {
-    font-size: 90% !important;
+    font-size: 90%;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 800px) and (min-width: 351px) {
   #home #name-line-1 {
-    font-size: 120% !important;
+    font-size: 120%;
   }
 
   #home #name-line-2 {
-    font-size: 150% !important;
+    font-size: 150%;
   }
 
   #home #name-line-3 {
-    font-size: 130% !important;
+    font-size: 130%;
   }
 }
