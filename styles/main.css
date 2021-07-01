@@ -30,7 +30,7 @@ a {
 
 header nav {
   background-color: #120e16;
-  box-shadow: 0px 0px 15px rgb(70, 60, 80);
+  box-shadow: 0px 0px 15px #81f;
 }
 
 header nav a {
@@ -140,24 +140,21 @@ main {
   background-repeat: repeat;
 }
 
-#tools #tool-content {
-  max-width: 80%;
+#tools table {
+  color: white;
+  text-align: center;
+  background-color:#81f;
+  border-radius: 15px !important;
 }
 
-#tools .tool {
-  width: 100px;
-  height: 100px;
-  margin: 20px;
-  border-radius: 50px;
-  background-color: #81f;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0px 0px 10px #81f;
+#tools table thead th {
+  height: 70px;
+  vertical-align: middle;
 }
 
-#tools .tool:hover {
-  transform:scale(1.05);
+#tools table tbody tr:nth-child(odd) {
+  background-color:rgb(146, 37, 255);
+  border-radius: 15px !important;
 }
 
 #repos {
@@ -194,7 +191,6 @@ main {
 #repos a.repo:hover {
   color: white;
   transform:scale(1.05);
-  box-shadow: 0px 0px 15px #81f;
 }
 
 #repos a.repo .top_sec {
