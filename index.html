@@ -1,14 +1,14 @@
+<!--
+ Copyright (c) 2021 Sri Lakshmi Kanthan P
+ 
+ This software is released under the MIT License.
+ https://opensource.org/licenses/MIT
+-->
+
 <!DOCTYPE html>
 
 <html lang="en">
   <head>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <link 
-      rel="stylesheet" 
-      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" 
-      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" 
-      crossorigin="anonymous"
-    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -25,52 +25,59 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
       crossorigin="anonymous"
     ></script>
-    <link
-      href="https://fonts.googleapis.com/css?​family=Oxygen"
-      rel="stylesheet"
+    <link 
+      rel="stylesheet" 
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" 
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" 
+      crossorigin="anonymous"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="keywords" content="srilakshmikanthanp, Sri Lakshmi Kanthan P" />
-    <link rel="icon" href="image/logo.png" />
-    <link rel="stylesheet" href="styles/main.css" />
-    <script src="scripts/main.js"></script>
-    <title>srilakshmikanthanp</title>
+    <script 
+      src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"
+    ></script>
+    <meta 
+      name="viewport" 
+      content="width=device-width, initial-scale=1" 
+    />
+    <meta 
+      name="keywords" 
+      content="srilakshmikanthanp, Sri Lakshmi Kanthan P" 
+    />
+    <meta 
+      name="color-scheme" 
+      content="dark"
+    />
+    <link 
+      rel="icon" 
+      href="image/logo.png" 
+    />
+    <link 
+      rel="stylesheet" 
+      href="styles/main.css" 
+    />
+    <script 
+      src="scripts/main.js"
+    ></script>
+    <title>
+      srilakshmikanthanp
+    </title>
   </head>
-  <body>
+  <body class="theme">
     <header>
-      <nav class="navbar fixed-top navbar-expand-md navbar-light">
-        <div class="container">
-          <a href="#home" class="navbar-brand" id="a-img">
-            <img id="logo" src="image/logo.png" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarToggler"
-            aria-controls="navbarToggler"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i data-feather="align-justify"></i>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
-            <div class="navbar-nav">
-              <a href="#home" class="nav-link nav-content">Home</a>
-              <div class="line align-self-center"></div>
-              <a href="#about" id="qwert" class="nav-link nav-content">About</a>
-              <div class="line align-self-center"></div>
-              <a href="#tools" class="nav-link nav-content">Tools</a>
-              <div class="line align-self-center"></div>
-              <a href="#repos" class="nav-link nav-content">Repos</a>
-            </div>
-          </div>
-        </div>
+      <nav class="d-flex align-items-center justify-content-center">
+        <a href="#home" class="d-flex align-items-center justify-content-center mx-2">
+          <i data-feather="home"></i>
+        </a>
+        <a href="#about" class="d-flex align-items-center justify-content-center mx-2">
+          <i data-feather="user"></i>
+        </a>
+        <a href="#skils" class="d-flex align-items-center justify-content-center mx-2">
+          <i data-feather="book"></i>
+        </a>
       </nav>
     </header>
     <main>
-      <section id="home">
-        <div class="container py-5">
+      <section id="home" class="d-flex flex-column">
+        <div class="container my-5">
           <div class="row row-cols-1 g-2">
             <div class="col text-end">
               <a href="mailto:srilakshmikanthanp@gmail.com" target="_blank">
@@ -93,135 +100,125 @@
               </a>
             </div>
             <div class="col text-end">
-              <a
-                href="https://www.instagram.com/srilakshmikanthanp/"
-                target="_blank"
-              >
+              <a href="https://www.instagram.com/srilakshmikanthanp/" target="_blank">
                 <i data-feather="instagram"></i>
               </a>
             </div>
           </div>
         </div>
-        <div class="container py-2">
-          <div class="row">
-            <div class="col text-start" id="name-line-1">
-              Hello, there! 👋 I'm
-            </div>
-          </div>
-          <div class="row">
-            <div class="col text-start" id="name-line-2">
+        <div class="container my-4">
+          <div class="row fs-1" id="name">
+            <div class="col">
               Sri Lakshmi Kanthan
             </div>
           </div>
-          <div class="row">
-            <div class="col text-start" id="name-line-3">
-              I love Math and Programming !
+          <div class="row fs-3" id="who">
+            <div class="col">
+              <p>
+                <span class="intro">I'm</span>
+                <span class="content"></span>
+                <span class="cursor">|</span>
+              </p>
             </div>
           </div>
         </div>
       </section>
       <section id="about">
         <div class="container">
-          <div class="row text-center py-2 px-5">
-            <div class="col">
-              <img src="https://avatars.githubusercontent.com/u/56999577?v=4" alt="Sri Lakshmi Kanthan" class="img-fulid me-circle"/>
+          <div class="row">
+            <div class="col fs-1 text-center">
+              About
             </div>
           </div>
-          <div class="row text-center">
-            <div class="col">
-              <h2><b>Sri Lakshmi Kanthan</b></h2>
+          <div class="row my-3">
+            <div class="col text-center">
+              Hello, I am Sri Lakshmi Kanthan a student from TamilNadu, Currently studing Information Technology at
+              Anna University, Trichy. I am a self-thouugnt Developer and I love to learn new things. Other than 
+              programming I love math and physics.
             </div>
           </div>
-          <div class="row text-center">
-            <div class="col">
-              <h5><b>Student</b></h5>
+          <div class="row my-5">
+            <div class="col-lg-6 text-center py-2">
+              <div class="my-img">
+                <img 
+                src="https://avatars.githubusercontent.com/u/56999577?v=4"
+                alt="srilakshmikanthanp"
+                class="img-fluid rounded img-thumbnail"
+              />
+              </div>
             </div>
-          </div>
-          <div class="row py-2 px-5">
-            <div class="col">
-              <p class="fw-bolder lh-base text-center">
-                Hello there! &#128075;, I am Sri Lakshmi kanthan form TamilNadu, Who love
-                Mathematics and Programing. I am currently studing Information 
-                Technology in University Collage of Engineering, Trichy.
-                I don't want to restrict me into some specfic part of Programming
-                technology insted I will do whatever i want or depending upon 
-                the sitution. I also like math and physics. It is always fun with science and best
-                entertainment!. I like to use Windows 
-                <i style="color: aqua;" class="fab fa-windows" aria-hidden="true"></i>
-              </p>
-            </div>
-          </div>
-          </div>
-        </div>
-      </section>
-      <section id="tools">
-        <div class="container py-5">
-          <div class="row justify-content-center"">
-            <div class="table-responsive">
-              <table class="table table-borderless">
-                <thead>
-                  <tr>
-                    <th>Languages</th>
-                    <th>Frameworks</th>
-                    <th>Tools</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>C</td>
-                    <td>Bootstrap</td>
-                    <td>Git/Github</td>
-                  </tr>
-                  <tr>
-                    <td>C++</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>Asm 64</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>Arduino</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>Java</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>Golang</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>Python</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>Html/Css</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
+            <div class="col-lg-6 align-self-center">
+              <div class="row">
+                <div class="col text-center py-2">
+                  <h3>Early Life</h3>
+
+                  <p>I was born in sep 01, 2002, in TamilNadu, India. I finished my Secondary school education
+                  in Little flower school in kumbakonam at 2017, TamilNadu. after that I finished my Higher
+                  Secondary education in Litttle flower school in kumbakonam at 2019, TamilNadu. I started
+                  My Information Technology in Anna University, Trichy, TamilNadu.</p>
+
+                  <h3>Hello, Code</h3>
+
+                  <p>Since 11<sup>th</sup> class I'm in love with Programming. I started with C After that
+                  I learned Some of languages and tools. </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section id="repos">
-        <div class="container py-5">
-          <div class="row justify-content-center" id="repos-content">
+      <section id="skils" class="d-flex align-items-center justify-content-center">
+        <div class="container text-center">
+          <h3>Languages</h3>
+          <hr>
+          <div class="d-flex flex-wrap align-items-center justify-content-center py-3">
+            <div class="toolpane">C</div>
+            <div class="toolpane">C++</div>
+            <div class="toolpane">Asm</div>
+            <div class="toolpane">Arduino</div>
+            <div class="toolpane">Java</div>
+            <div class="toolpane">Golang</div>
+            <div class="toolpane">Python</div>
+            <div class="toolpane">Html/Css</div>
+          </div>
+          <h3>FrameWorks</h3>
+          <hr>
+          <div class="d-flex flex-wrap align-items-center justify-content-center py-3">
+            <div class="toolpane">Bootstrap</div>
+            <div class="toolpane">Jquery</div>
+          </div>
+          <h3>Tools</h3>
+          <hr>
+          <div class="d-flex flex-wrap align-items-center justify-content-center py-3">
+            <div class="toolpane">Git/Github</div>
           </div>
         </div>
       </section>
     </main>
     <footer>
-      Made with &lt;3 by Sri Lakshmi Kanthan
+      <div class="d-flex align-items-center justify-content-center my-1">
+        <a href="https://www.github.com/srilakshmikanthanp" target="_blank" class="mx-1">
+          <i data-feather="github"></i>
+        </a>
+        <a href="https://twitter.com/srilaxmikanthan" target="_blank" class="mx-1">
+          <i data-feather="twitter"></i>
+        </a>
+        <a href="https://www.facebook.com/sri.l.kanthan.1/" target="_blank" class="mx-1">
+          <i data-feather="facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/srilakshmikanthanp/" target="_blank" class="mx-1">
+          <i data-feather="instagram"></i>
+        </a>
+      </div>
+      <div class="d-flex align-items-center justify-content-center my-1">
+        <a href="mailto:srilakshmikanthanp@mail.com">
+          srilakshmikanthanp@gmail.com
+        </a>
+      </div>
+      <div class="d-flex align-items-center justify-content-center my-1">
+          Made with &hearts; by Sri Lakshmi Kanthan
+      </div>
     </footer>
   </body>
 </html>

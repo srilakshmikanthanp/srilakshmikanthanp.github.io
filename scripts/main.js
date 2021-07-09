@@ -3,50 +3,36 @@
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
 
-
 /**
- * Adds repo cards to page
+ * @brief auto text effect for id who
  */
-async function addRepoCards() {
-    // Get Repos from Github
-    let repos = await fetch(`https://api.github.com/users/srilakshmikanthanp/repos`)
-    .then(response => response.json())
-    .then(response => {
-        return response;
-    });
+async function whoTextTypingEffect() {
+    var data = ['Student !', 'Programmer !'];
+    var who  = $('#who .content');
+    var len  = data.length;
+    var wait = (ms) => new Promise((resolve) => {
+        setTimeout(resolve, ms);
+    })
 
-    // Add Repo Cards
-    for(let repo of repos) {
-        $("#repos-content").append(`
-            <a href="${repo['html_url']}" class="repo" target="_blank">
-                <div class="top_sec">
-                    ${repo['name']}
-                </div>
-                <div class="mid_sec">
-                    ${repo['description']}
-                </div>
-                <div class="bot_sec">
-                    <div> 
-                        ${repo['language']}
-                    </div>
-                    <div>
-                        <i class="fas fa-star"></i>
-                        ${repo['stargazers_count']}
-                    </div>
-                    <div>
-                        <i class="fas fa-code-branch"></i>
-                        ${repo['forks_count']}
-                    </div>
-                </div>
-            </a>
-        `);
+    for(let i = 0; i < len; i = ((i + 1) == len ? 0 : i + 1) ) {
+        for(let j = 0; j < data[i].length; ++j) {
+            who.text(data[i].substring(0, j + 1));
+            await wait(200);
+        }
+
+        await wait(1000);
+
+        for(let j = data[i].length - 1; j > 0; --j) {
+            who.text(data[i].substring(0, j - 1));
+            await wait(200);
+        }
     }
 }
 
 /**
- * on Dom Load
+ * Initilize the Page
  */
 $(function () {
-    addRepoCards();
+    whoTextTypingEffect();
     feather.replace();
 });
