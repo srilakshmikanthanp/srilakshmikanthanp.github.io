@@ -7,7 +7,7 @@
  * @brief auto text effect for id who
  */
 async function whoTextTypingEffect() {
-  var data = ["Student !", "Programmer !"];
+  var data = ["a Student !", "a Programmer !"];
   var who = $("#who .content");
   var len = data.length;
   var wait = (ms) =>
@@ -58,10 +58,32 @@ function formSubmit(evt) {
 }
 
 /**
+ * @brief Space For tab key in text area
+ */
+function keyTab(evt) {
+  if (evt.key == "Tab") {
+    evt.preventDefault();
+    var start = this.selectionStart;
+    var end = this.selectionEnd;
+    var value = this.value;
+    this.value = value.substring(0, start) + "\t" + value.substring(end);
+    this.selectionStart = this.selectionEnd = start + 1;
+  }
+}
+
+/**
+ * @brief Main function
+ */
+function main() {
+  whoTextTypingEffect();
+  $("#contactform").on("submit", formSubmit);
+  $("#contactmessage").on("keydown", keyTab);
+}
+
+/**
  * Initilize the Page
  */
 $(function () {
-  whoTextTypingEffect();
-  $("#contactsubmit").on("click", formSubmit);
+  main();
   feather.replace();
 });

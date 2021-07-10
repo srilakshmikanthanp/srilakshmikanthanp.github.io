@@ -101,6 +101,12 @@ section#contact {
   padding-top: 60px;
 }
 
+section#contact form {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 footer {
   width: 100%;
   height: 100px;
