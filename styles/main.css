@@ -43,7 +43,7 @@ header nav a:hover {
 section#home {
   width: 100%;
   min-height: 100vh;
-  padding-top: 60px;
+  padding-top: 75px;
   color: #fff;
   background-color: #000000;
   background-image: linear-gradient(45deg, #000000, #04619f);
@@ -70,8 +70,7 @@ section#home #who .cursor {
 
 section#about {
   width: 100%;
-  min-height: 100vh;
-  padding-top: 60px;
+  padding-top: 75px;
 }
 
 section#about .my-img {
@@ -82,8 +81,7 @@ section#about .my-img {
 
 section#skils {
   width: 100%;
-  min-height: 100vh;
-  padding-top: 60px;
+  padding-top: 75px;
 }
 
 section#skils .toolpane {
@@ -97,14 +95,15 @@ section#skils .toolpane {
 
 section#contact {
   width: 100%;
-  min-height: 100vh;
-  padding-top: 60px;
+  padding-top: 75px;
 }
 
 section#contact form {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 
 footer {
