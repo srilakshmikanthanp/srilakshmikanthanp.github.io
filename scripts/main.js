@@ -76,7 +76,7 @@ function keyTab(evt) {
  */
 function main() {
   whoTextTypingEffect();
-  $("#contactsubmit").on("submit", formSubmit);
+  $("#contactsubmit").on("click", formSubmit);
   $("#contactmessage").on("keydown", keyTab);
 }
 
