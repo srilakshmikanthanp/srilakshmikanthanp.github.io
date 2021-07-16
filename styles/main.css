@@ -33,7 +33,7 @@ header nav a {
   height: 35px;
   background: rgba(13, 110, 253, 0.8);
   border-radius: 20px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 5px var(--shadow-color);
 }
 
 header nav a:hover {
@@ -76,7 +76,7 @@ section#about {
 section#about .my-img {
   max-width: 350px;
   max-height: 350px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 20px var(--shadow-color);
 }
 
 section#skils {
@@ -90,7 +90,7 @@ section#skils .toolpane {
   margin: 10px;
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 0 0 10px #000;
+  box-shadow: 0 0 10px var(--shadow-color);
 }
 
 section#contact {
@@ -116,6 +116,10 @@ footer {
 }
 
 @media screen and (prefers-color-scheme: dark) {
+  :root {
+    --shadow-color: #000;
+  }
+
   .theme {
     color: #fff;
     background-color: #1a1a1a;
@@ -128,6 +132,10 @@ footer {
 }
 
 @media screen and (prefers-color-scheme: light) {
+  :root {
+    --shadow-color: #888888;
+  }
+
   .theme {
     color: #1a1a1a;
     background-color: #fff;
