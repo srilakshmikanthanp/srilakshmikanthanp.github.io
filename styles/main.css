@@ -20,18 +20,22 @@ a:hover {
 
 header {
   width: 100%;
-  height: 70px;
+  height: 55px;
   position: fixed;
 }
 
 header nav {
+  width: 100%;
+  height: 100%;
   padding: 20px;
 }
 
 header nav a {
   width: 70px;
   height: 35px;
-  background: rgba(13, 110, 253, 0.8);
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.5);
+  background: transparent;
   border-radius: 20px;
   box-shadow: 0px 0px 5px var(--shadow-color);
 }
@@ -43,7 +47,7 @@ header nav a:hover {
 section#home {
   width: 100%;
   min-height: 100vh;
-  padding-top: 75px;
+  padding-top: 60px;
   color: #fff;
   background-color: #000000;
   background-image: linear-gradient(45deg, #000000, #04619f);
@@ -53,7 +57,7 @@ section#home {
   0% {
     opacity: 1;
   }
-  40% {
+  50% {
     opacity: 1;
   }
   60% {
@@ -70,7 +74,7 @@ section#home #who .cursor {
 
 section#about {
   width: 100%;
-  padding-top: 75px;
+  padding-top: 60px;
 }
 
 section#about .my-img {
@@ -81,7 +85,7 @@ section#about .my-img {
 
 section#skils {
   width: 100%;
-  padding-top: 75px;
+  padding-top: 60px;
 }
 
 section#skils .toolpane {
@@ -95,7 +99,7 @@ section#skils .toolpane {
 
 section#contact {
   width: 100%;
-  padding-top: 75px;
+  padding-top: 60px;
 }
 
 section#contact form {

@@ -4,16 +4,38 @@
 // https://opensource.org/licenses/MIT
 
 /**
+ * @brief stores globals
+ */
+var globals = {
+  timer: null,
+}
+
+/**
+ * @breif Show header while mouse move
+ */
+function headerSlide(evt) {
+  var header = $("header");
+
+  if(header.is(":hidden")) {
+    header.slideDown(200);
+    globals.timer = setTimeout(() => header.slideUp(200), 5000);
+  } else {
+    clearTimeout(globals.timer);
+    globals.timer = setTimeout(() => header.slideUp(200), 5000);
+  }
+}
+
+/**
  * @brief auto text effect for id who
  */
 async function whoTextTypingEffect() {
   var data = ["a Student !", "a Programmer !"];
   var who = $("#who .content");
   var len = data.length;
-  var wait = (ms) =>
-    new Promise((resolve) => {
+  
+  var wait = (ms) => new Promise((resolve) => {
       setTimeout(resolve, ms);
-    });
+  });
 
   for (let i = 0; i < len; i = i + 1 == len ? 0 : i + 1) {
     for (let j = 0; j < data[i].length; ++j) {
@@ -72,18 +94,30 @@ function keyTab(evt) {
 }
 
 /**
- * @brief Main function
+ * @brief smooth scroll for links
  */
-function main() {
-  whoTextTypingEffect();
-  $("#contactsubmit").on("click", formSubmit);
-  $("#contactmessage").on("keydown", keyTab);
+function smoothScroll(evt) {
+  var target = $(evt.currentTarget).attr("href");
+  var toppos = $(target).offset().top;
+
+  $("html, body").animate({
+    scrollTop: toppos
+  }, 500);
+
+  evt.preventDefault();
 }
 
 /**
- * Initilize the Page
+ * @brief Main function
  */
-$(function () {
-  main();
-  feather.replace();
-});
+function main() {
+  // page initlize
+  whoTextTypingEffect();
+  $("header").hide();
+
+  // event listeners
+  $("#contactsubmit").on("click", formSubmit);
+  $("#contactmessage").on("keydown", keyTab);
+  $("a[href^='#']").on("click", smoothScroll);
+  $(document).on('mousemove', headerSlide);
+}
