@@ -70,16 +70,16 @@
   <body class="theme">
     <header>
       <nav class="d-flex align-items-center justify-content-center">
-        <a href="#home" class="d-flex align-items-center justify-content-center mx-2">
+        <a href="#home" class="d-flex align-items-center justify-content-center mx-2" title="Home">
           <i data-feather="home"></i>
         </a>
-        <a href="#about" class="d-flex align-items-center justify-content-center mx-2">
+        <a href="#about" class="d-flex align-items-center justify-content-center mx-2" title="About">
           <i data-feather="user"></i>
         </a>
-        <a href="#skils" class="d-flex align-items-center justify-content-center mx-2">
+        <a href="#skils" class="d-flex align-items-center justify-content-center mx-2" title="Tools">
           <i data-feather="book"></i>
         </a>
-        <a href="#contact" class="d-flex align-items-center justify-content-center mx-2">
+        <a href="#contact" class="d-flex align-items-center justify-content-center mx-2" title="Contact">
           <i data-feather="phone"></i>
         </a>
       </nav>
@@ -136,7 +136,7 @@
         <div class="container">
           <div class="row">
             <div class="col fs-1 text-center">
-              About
+              About Me
             </div>
             <hr>
           </div>
@@ -198,6 +198,7 @@
           <div class="d-flex flex-wrap align-items-center justify-content-center py-3">
             <div class="toolpane">Bootstrap</div>
             <div class="toolpane">Jquery</div>
+            <div class="toolpane">Jquery UI</div>
           </div>
           <h3>Tools</h3>
           <hr>
@@ -210,12 +211,15 @@
         <div class="container text-center">
           <form>
             <fieldset>
-              <legend class="fs-1 py-2">Contact Me</legend>
+              <legend class="fs-2 py-2">Get In Touch</legend>
               <div class="mb-3">
                 <input type="text" class="form-control" placeholder="Subject" id="contactsubject">
               </div>
               <div class="mb-3">
-                <textarea class="form-control" placeholder="Message" rows="6" id="contactmessage"></textarea>
+                <textarea class="form-control mb-3" placeholder="Message" rows="6" id="contactmessage" aria-describedby="msg-note"></textarea>
+                <div class="form-text" id="msg-note">
+                  This Will Open Your Email Client with filled Message
+                </div>
               </div>
               <div class="mb-3">
                 <button type="submit" class="btn btn-primary" id="contactsubmit">Send</button>
