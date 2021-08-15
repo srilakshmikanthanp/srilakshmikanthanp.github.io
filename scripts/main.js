@@ -47,7 +47,7 @@ async function whoTextTypingEffect() {
 
     for (let j = data[i].length - 1; j > 0; --j) {
       who.text(data[i].substring(0, j - 1));
-      await wait(200);
+      await wait(100);
     }
   }
 }

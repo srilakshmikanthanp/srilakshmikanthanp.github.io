@@ -128,7 +128,7 @@ section#home #who .cursor {
   animation: blink 0.7s infinite;
 }
 
-section#home #name {
+section#home #name u {
   text-decoration-color: #64ffda;
 }
 
