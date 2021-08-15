@@ -37,9 +37,22 @@
   }
 }
 
+.particles {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
 
-body {
+.z-top {
+  z-index: 1;
+}
+
+html, body {
   margin: 0%;
+  scroll-snap-type: y mandatory;
+  scroll-snap-stop: always;
 }
 
 a {
@@ -69,6 +82,7 @@ header nav a {
   backdrop-filter: blur(5px);
   background: transparent;
   border-radius: 20px;
+  color: #64ffda;
   box-shadow: 0px 0px 5px var(--shadow-color);
 }
 
@@ -76,13 +90,18 @@ header nav a:hover {
   color: #fff;
 }
 
+section#home #top-social a {
+  color: #64ffda;
+}
+
 section#home {
   width: 100%;
   min-height: 100vh;
   padding-top: 60px;
+  position: relative;
   color: #fff;
-  background-color: #000000;
-  background-image: linear-gradient(45deg, #000000, #04619f);
+  scroll-snap-align: start;
+  background-color: #0a192f;
 }
 
 @keyframes blink {
@@ -100,13 +119,37 @@ section#home {
   }
 }
 
+section#home #intro {
+  color: #64ffda;
+  font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono", monospace;
+}
+
 section#home #who .cursor {
   animation: blink 0.7s infinite;
+}
+
+section#home #name {
+  text-decoration-color: #64ffda;
+}
+
+section#home #top-mail {
+  width: 100%;
+  position: absolute;
+  padding: 10px;
+  padding-bottom: 30px;
+  bottom: 0;
+}
+
+section#home #top-mail a {
+  color: #64ffda;
+  writing-mode: vertical-lr;
 }
 
 section#about {
   width: 100%;
   padding-top: 60px;
+  position: relative;
+  scroll-snap-align: start;
 }
 
 section#about .my-img {
@@ -118,6 +161,8 @@ section#about .my-img {
 section#skils {
   width: 100%;
   padding-top: 60px;
+  position: relative;
+  scroll-snap-align: start;
 }
 
 section#skils .toolpane {
@@ -132,6 +177,7 @@ section#skils .toolpane {
 section#contact {
   width: 100%;
   padding-top: 60px;
+  position: relative;
 }
 
 section#contact form {
@@ -140,6 +186,7 @@ section#contact form {
   margin-right: auto;
   padding-top: 30px;
   padding-bottom: 50px;
+  scroll-snap-align: start;
 }
 
 footer {
@@ -147,6 +194,6 @@ footer {
   height: 100px;
   padding: 10px;
   color: #fff;
-  background-color: #000000;
-  background-image: linear-gradient(45deg, #000000, #04619f);
+  scroll-snap-align: start;
+  background-color: #0a192f;
 }

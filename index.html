@@ -34,6 +34,14 @@
     <script 
       src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"
     ></script>
+    <script 
+      src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.33.3/tsparticles.min.js"
+      integrity="sha512-IacIaC8mVlD3mEZjwEkd9p9mWlVpWa2deOIsS2ZL2HtP7cpXbPYlJX6g53gaXVlZrlHhMcjkdVopjua8yJ7zkg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"
+    ></script>
+    <script 
+      src="https://cdn.jsdelivr.net/npm/jquery-particles"
+    ></script>
     <meta 
       name="viewport" 
       content="width=device-width, initial-scale=1" 
@@ -68,7 +76,7 @@
     </title>
   </head>
   <body class="theme">
-    <header>
+    <header class="z-top">
       <nav class="d-flex align-items-center justify-content-center">
         <a href="#home" class="d-flex align-items-center justify-content-center mx-2" title="Home">
           <i data-feather="home"></i>
@@ -86,7 +94,8 @@
     </header>
     <main>
       <section id="home" class="d-flex flex-column">
-        <div class="container my-4">
+        <div class="particles" id="particles-home"></div>
+        <div class="container my-4 z-top" id="top-social">
           <div class="row row-cols-1 g-2">
             <div class="col text-end my-2">
               <a href="mailto:srilakshmikanthanp@gmail.com" target="_blank">
@@ -115,10 +124,15 @@
             </div>
           </div>
         </div>
-        <div class="container my-2">
+        <div class="container my-2 z-top">
+          <div class="row">
+            <div class="col my-2 fs-5" id="intro">
+              Hi!, My name is,
+            </div>
+          </div>
           <div class="row fs-1" id="name">
             <div class="col">
-              Sri Lakshmi Kanthan
+              Sri Lakshmi <u>Kanth</u>an
             </div>
           </div>
           <div class="row fs-3" id="who">
@@ -128,6 +142,15 @@
                 <span class="content"></span>
                 <span class="cursor">|</span>
               </p>
+            </div>
+          </div>
+        </div>
+        <div id="top-mail">
+          <div class="container z-top"">
+            <div class="row">
+              <div class="col text-end">
+                <a href="mailto:srilakshmikanthanp@gmail.com">srilakshmikanthanp@gmail.com</a>
+              </div>
             </div>
           </div>
         </div>

@@ -108,12 +108,20 @@ function smoothScroll(evt) {
 }
 
 /**
+ * init the particles
+ */
+function particles() {
+  $("#particles-home").particles().ajax("/assets/particles.json");
+}
+
+/**
  * @brief Main function
  */
 function main() {
   // page initlize
   whoTextTypingEffect();
   $("header").hide();
+  particles();
 
   // event listeners
   $("#contactsubmit").on("click", formSubmit);
