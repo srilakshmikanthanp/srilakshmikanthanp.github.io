@@ -51,8 +51,6 @@
 
 html, body {
   margin: 0%;
-  scroll-snap-type: y mandatory;
-  scroll-snap-stop: always;
 }
 
 a {
@@ -100,7 +98,6 @@ section#home {
   padding-top: 60px;
   position: relative;
   color: #fff;
-  scroll-snap-align: start;
   background-color: #0a192f;
 }
 
@@ -149,7 +146,6 @@ section#about {
   width: 100%;
   padding-top: 60px;
   position: relative;
-  scroll-snap-align: start;
 }
 
 section#about .my-img {
@@ -162,7 +158,6 @@ section#skils {
   width: 100%;
   padding-top: 60px;
   position: relative;
-  scroll-snap-align: start;
 }
 
 section#skils .toolpane {
@@ -186,7 +181,6 @@ section#contact form {
   margin-right: auto;
   padding-top: 30px;
   padding-bottom: 50px;
-  scroll-snap-align: start;
 }
 
 footer {
@@ -196,4 +190,15 @@ footer {
   color: #fff;
   scroll-snap-align: start;
   background-color: #0a192f;
+}
+
+@media (hover: hover) {
+  html, body {
+    scroll-snap-type: y mandatory;
+    scroll-snap-stop: always;
+  }
+
+  section {
+    scroll-snap-align: start;
+  }
 }
