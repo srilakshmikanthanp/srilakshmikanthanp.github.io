@@ -60,13 +60,17 @@ function formSubmit(evt) {
   var message = $("#contactmessage").val();
 
   if (subj.length == 0) {
-    alert("Subject is required");
+    $("#contactsubject").addClass("is-invalid");
     return false;
+  } else {
+    $("#contactsubject").removeClass("is-invalid");
   }
 
   if (message.length == 0) {
-    alert("Message is required");
+    $("#contactmessage").addClass("is-invalid");
     return false;
+  } else {
+    $("#contactmessage").removeClass("is-invalid");
   }
 
   $(location).attr(
