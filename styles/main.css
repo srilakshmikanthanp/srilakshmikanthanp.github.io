@@ -116,7 +116,7 @@ header nav {
   height: 100px;
   padding: 10px;
   color: rgb(var(--pri-fg-col));
-  backdrop-filter: blur(10px);
+  background-color: rgba(var(--pri-bg-col), 0.9);
 }
 
 header nav div.logo {
@@ -159,8 +159,7 @@ header nav div.d-min .menu-btn {
 
 header nav div.d-min .sidebar {
   width: 0px;
-  height: 100vh;
-  min-height: -webkit-fill-available;
+  height: 100%;
   position: fixed;
   top: 0%;
   right: 0%;
