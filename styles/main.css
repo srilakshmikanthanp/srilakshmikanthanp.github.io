@@ -5,100 +5,77 @@
  * https://opensource.org/licenses/MIT
  */
 
- @media screen and (prefers-color-scheme: dark) {
-  :root {
-    --shadow-color: #000;
-  }
-
-  .theme {
-    color: #fff;
-    background-color: #1a1a1a;
-  }
-
-  section#skils .toolpane,
-  section#contact .contpane {
-    background-color: #404040;
-  }
+:root {
+  --pri-bg-col: 10, 25, 47;
+  --pri-fg-col: 255, 255, 255;
+  --sec-bg-col: 100, 255, 218;
+  --sec-fg-col: 100, 255, 218;
 }
 
-@media screen and (prefers-color-scheme: light) {
-  :root {
-    --shadow-color: #888888;
-  }
+::-webkit-scrollbar {
+  width: 7px;
+  background: rgb(var(--pri-bg-col));
+}
 
-  .theme {
-    color: #1a1a1a;
-    background-color: #fff;
-  }
-
-  section#skils .toolpane,
-  section#contact .contpane {
-    background-color: white;
-  }
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgb(var(--sec-bg-col));
 }
 
 .particles {
   width: 100%;
-  height: 100vh;
-  position: absolute;
+  height: 100%;
+  position: fixed;
   top: 0;
-  z-index: 0;
+  z-index: -1;
 }
 
 .z-top {
-  z-index: 1;
+  z-index: 10;
 }
 
-html, body {
-  margin: 0%;
+.font-oxygen {
+  font-family: 'Oxygen', sans-serif;
 }
 
-a {
-  color: #fff;
+.txt-wrapper {
+  text-align: left;
+}
+
+.img-wrapper {
+  width: 100%;
+  height: 100%;
+  max-width: 350px;
+  max-height: 350px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-decoration {
+  box-shadow: 2px 2px 2px rgb(var(--sec-fg-col));
+}
+
+.button {
+  width: 150px;
+  height: 50px;
+  border: 1px solid rgb(var(--sec-bg-col));
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button a {
+  color: rgb(var(--pri-fg-col));
   text-decoration: none;
 }
 
-a:hover {
-  color: rgba(13, 110, 253, 0.8);
-}
-
-header {
-  width: 100%;
-  height: 55px;
-  position: fixed;
-}
-
-header nav {
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-}
-
-header nav a {
-  width: 70px;
-  height: 35px;
-  backdrop-filter: blur(5px);
-  background: transparent;
-  border-radius: 20px;
-  color: #64ffda;
-  box-shadow: 0px 0px 5px var(--shadow-color);
-}
-
-header nav a:hover {
-  color: #fff;
-}
-
-section#home #top-social a {
-  color: #64ffda;
-}
-
-section#home {
-  width: 100%;
-  min-height: 100vh;
-  padding-top: 60px;
-  position: relative;
-  color: #fff;
-  background-color: #0a192f;
+.button:hover {
+  background: rgba(var(--sec-bg-col), 0.4);
 }
 
 @keyframes blink {
@@ -116,89 +93,152 @@ section#home {
   }
 }
 
-section#home #intro {
-  color: #64ffda;
-  font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono", monospace;
-}
-
-section#home #who .cursor {
-  animation: blink 0.7s infinite;
-}
-
-section#home #name u {
-  text-decoration-color: #64ffda;
-}
-
-section#home #top-mail {
-  width: 100%;
-  position: absolute;
-  padding: 10px;
-  padding-bottom: 30px;
-  bottom: 0;
-}
-
-section#home #top-mail a {
-  color: #64ffda;
-  writing-mode: vertical-lr;
-}
-
-section#about {
-  width: 100%;
-  padding-top: 60px;
-  position: relative;
-}
-
-section#about .my-img {
-  max-width: 350px;
-  max-height: 350px;
-  box-shadow: 0px 0px 20px var(--shadow-color);
-}
-
-section#skils {
-  width: 100%;
-  padding-top: 60px;
-  position: relative;
-}
-
-section#skils .toolpane {
-  width: 100px;
-  height: 50px;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px var(--shadow-color);
-}
-
-section#contact {
-  width: 100%;
-  padding-top: 60px;
-  position: relative;
-}
-
-section#contact form {
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 30px;
-  padding-bottom: 50px;
-}
-
-footer {
-  width: 100%;
-  height: 100px;
-  padding: 10px;
-  color: #fff;
-  scroll-snap-align: start;
-  background-color: #0a192f;
+p {
+  font-size: 1.1rem !important;
 }
 
 @media (hover: hover) {
-  html, body {
+  html {
     scroll-snap-type: y mandatory;
-    scroll-snap-stop: always;
+  }
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  color: rgb(var(--pri-fg-col));
+  background-color: rgb(var(--pri-bg-col));
+}
+
+header nav {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  color: rgb(var(--pri-fg-col));
+  backdrop-filter: blur(10px);
+}
+
+header nav div.logo {
+  width: 30px;
+  height: 40px;
+  display: inline-block;
+}
+
+header nav a {
+  position: relative;
+  color: rgb(var(--pri-fg-col)) !important;
+}
+
+header nav a:hover {
+  color: rgb(var(--sec-fg-col)) !important;
+}
+
+header nav div.d-max a::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  right: 0;
+  width: 0;
+  bottom: -3px;
+  background: rgb(var(--sec-fg-col));
+  transition: width 0.3s ease-out;
+  border-radius: 10px;
+}
+
+header nav div.d-max a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+header nav div.d-min .menu-btn {
+  color: rgb(var(--pri-fg-col));
+  background-color: transparent;
+  border: 0;
+}
+
+header nav div.d-min .sidebar {
+  width: 0px;
+  height: 100vh;
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  color: rgb(var(--pri-fg-col));
+  background-color: rgba(var(--pri-bg-col), 1);
+  transition: width 0.5s;
+  z-index: -1;
+}
+
+header nav div.d-min .sidebar ul {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media screen and (max-width: 800px) {
+  nav div.d-max {
+    display: none;
   }
 
+  nav div.d-min {
+    display: initial;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  nav div.d-max {
+    display: initial;
+  }
+
+  nav div.d-min {
+    display: none;
+  }
+}
+
+section {
+  padding: 30px;
+  padding-top: 130px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (hover: hover) {
   section {
     scroll-snap-align: start;
   }
+}
+
+section#home {
+  min-height: 100vh;
+}
+
+section#home .sec-col {
+  color: rgb(var(--sec-fg-col));
+}
+
+section#home p:last-child::after {
+  content: "|";
+  animation: blink 1s infinite;
+}
+
+section#tools .img-wrapper{
+  width: 500px !important;
+  height: 500px !important;
+}
+
+footer {
+  min-height: 100px;
+  margin-top: 40px;
+  scroll-snap-align: start;
+}
+
+footer a {
+  color: rgb(var(--pri-fg-col)) !important;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: rgb(var(--sec-fg-col)) !important;
 }

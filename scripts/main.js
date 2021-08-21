@@ -4,33 +4,32 @@
 // https://opensource.org/licenses/MIT
 
 /**
- * @brief stores globals
+ * SideBar menu button click
  */
-var globals = {
-  timer: null,
-}
+function menuButtonClick(evt) {
+  var btnicon = $(".menu-btn > i");
 
-/**
- * @breif Show header while mouse move
- */
-function headerSlide(evt) {
-  var header = $("header");
-
-  if(header.is(":hidden")) {
-    header.slideDown(200);
-    globals.timer = setTimeout(() => header.slideUp(200), 5000);
+  if(btnicon.hasClass("fa-bars")) {
+    btnicon.removeClass("fa-bars").addClass("fa-arrow-right");
+    $(".sidebar").css({
+      "width": "250px",
+      "box-shadow" : "0px 0px 0px 100vw rgba(0,0,0,.3)"
+    });
   } else {
-    clearTimeout(globals.timer);
-    globals.timer = setTimeout(() => header.slideUp(200), 5000);
+    btnicon.removeClass("fa-arrow-right").addClass("fa-bars");
+    $(".sidebar").css({
+      "width": "0px",
+      "box-shadow" : "0px 0px 0px 0vw rgba(0,0,0,0)"
+    });
   }
 }
 
 /**
  * @brief auto text effect for id who
  */
-async function whoTextTypingEffect() {
-  var data = ["a Student !", "a Programmer !"];
-  var who = $("#who .content");
+async function textTypingEffect() {
+  var data = ["I'm a Student !", " I'm a Programmer !"];
+  var who = $("section#home p:last-child");
   var len = data.length;
   
   var wait = (ms) => new Promise((resolve) => {
@@ -40,60 +39,15 @@ async function whoTextTypingEffect() {
   for (let i = 0; i < len; i = i + 1 == len ? 0 : i + 1) {
     for (let j = 0; j < data[i].length; ++j) {
       who.text(data[i].substring(0, j + 1));
-      await wait(200);
+      await wait(300);
     }
 
     await wait(1000);
 
     for (let j = data[i].length - 1; j > 0; --j) {
       who.text(data[i].substring(0, j - 1));
-      await wait(100);
+      await wait(200);
     }
-  }
-}
-
-/**
- * @brief Handeler for Form Submit
- */
-function formSubmit(evt) {
-  var subj = $("#contactsubject").val();
-  var message = $("#contactmessage").val();
-
-  if (subj.length == 0) {
-    $("#contactsubject").addClass("is-invalid");
-    return false;
-  } else {
-    $("#contactsubject").removeClass("is-invalid");
-  }
-
-  if (message.length == 0) {
-    $("#contactmessage").addClass("is-invalid");
-    return false;
-  } else {
-    $("#contactmessage").removeClass("is-invalid");
-  }
-
-  $(location).attr(
-    "href",
-    `mailto:srilakshmikanthanp@gmail.com?subject=${encodeURIComponent(
-      subj
-    )}&body=${encodeURIComponent(message)}`
-  );
-
-  return false;
-}
-
-/**
- * @brief Space For tab key in text area
- */
-function keyTab(evt) {
-  if (evt.key == "Tab") {
-    evt.preventDefault();
-    var start = this.selectionStart;
-    var end = this.selectionEnd;
-    var value = this.value;
-    this.value = value.substring(0, start) + "\t" + value.substring(end);
-    this.selectionStart = this.selectionEnd = start + 1;
   }
 }
 
@@ -115,21 +69,18 @@ function smoothScroll(evt) {
  * init the particles
  */
 function particles() {
-  $("#particles-home").particles().ajax("/assets/particles.json");
+  $("#particles").particles().ajax("/assets/particles.json");
 }
 
 /**
  * @brief Main function
  */
 function main() {
-  // page initlize
-  whoTextTypingEffect();
-  $("header").hide();
+  // init page
   particles();
+  textTypingEffect();
 
   // event listeners
-  $("#contactsubmit").on("click", formSubmit);
-  $("#contactmessage").on("keydown", keyTab);
   $("a[href^='#']").on("click", smoothScroll);
-  $(document).on('mousemove', headerSlide);
+  $(".menu-btn").on("click", menuButtonClick);
 }

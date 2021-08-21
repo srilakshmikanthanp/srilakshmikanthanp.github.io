@@ -25,6 +25,18 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="preconnect" 
+      href="https://fonts.googleapis.com"
+    >
+    <link
+      rel="preconnect" 
+      href="https://fonts.gstatic.com" crossorigin
+    >
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap" 
+      rel="stylesheet"
+    >
     <link 
       rel="stylesheet" 
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" 
@@ -42,6 +54,7 @@
     <script 
       src="https://cdn.jsdelivr.net/npm/jquery-particles"
     ></script>
+
     <meta 
       name="viewport" 
       content="width=device-width, initial-scale=1" 
@@ -50,14 +63,12 @@
       name="keywords" 
       content="srilakshmikanthanp, Sri Lakshmi Kanthan P" 
     />
-    <meta 
-      name="color-scheme" 
-      content="dark"
-    />
+
     <link 
       rel="icon" 
       href="image/logo.png" 
     />
+
     <link 
       rel="stylesheet" 
       href="styles/main.css" 
@@ -65,216 +76,271 @@
     <script 
       src="scripts/main.js"
     ></script>
+
     <script>
       $(function () {
         main();
         feather.replace();
       });
     </script>
+
     <title>
       srilakshmikanthanp
     </title>
   </head>
-  <body class="theme">
-    <header class="z-top">
-      <nav class="d-flex align-items-center justify-content-center">
-        <a href="#home" class="d-flex align-items-center justify-content-center mx-2" title="Home">
-          <i data-feather="home"></i>
-        </a>
-        <a href="#about" class="d-flex align-items-center justify-content-center mx-2" title="About">
-          <i data-feather="user"></i>
-        </a>
-        <a href="#skils" class="d-flex align-items-center justify-content-center mx-2" title="Tools">
-          <i data-feather="book"></i>
-        </a>
-        <a href="#contact" class="d-flex align-items-center justify-content-center mx-2" title="Contact">
-          <i data-feather="phone"></i>
-        </a>
-      </nav>
-    </header>
-    <main>
-      <section id="home" class="d-flex flex-column">
-        <div class="particles" id="particles-home"></div>
-        <div class="container my-4 z-top" id="top-social">
-          <div class="row row-cols-1 g-2">
-            <div class="col text-end my-2">
-              <a href="mailto:srilakshmikanthanp@gmail.com" target="_blank">
-                <i data-feather="mail"></i>
+  <body>
+    <div class="particles" id="particles">
+    </div>
+    <div class="z-top">
+      <header>
+        <nav class="navbar navbar-expand fixed-top">
+          <div class="container">
+            <div class="logo">
+              <a href="#">
+                <img src="/image/logo.png" alt="logo" class="img-fluid" />
               </a>
             </div>
-            <div class="col text-end my-2">
-              <a href="https://www.github.com/srilakshmikanthanp" target="_blank">
-                <i data-feather="github"></i>
-              </a>
+            <div class="d-max">
+              <ul class="navbar-nav">
+                <li class="nav-item mx-3">
+                  <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link" href="#tools">Tools</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
             </div>
-            <div class="col text-end my-2">
-              <a href="https://twitter.com/srilaxmikanthan" target="_blank">
-                <i data-feather="twitter"></i>
-              </a>
-            </div>
-            <div class="col text-end my-2">
-              <a href="https://www.facebook.com/sri.l.kanthan.1/" target="_blank">
-                <i data-feather="facebook"></i>
-              </a>
-            </div>
-            <div class="col text-end my-2">
-              <a href="https://www.instagram.com/srilakshmikanthanp/" target="_blank" class="my-1">
-                <i data-feather="instagram"></i>
-              </a>
+            <div class="d-min">
+              <button class="menu-btn">
+                <i class="fas fa-bars fs-4"></i>
+              </button>
+              <aside class="sidebar">
+                <ul class="list-unstyled text-center">
+                  <li>
+                    <a class="nav-link" href="#home">Home</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#tools">Tools</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </aside>
             </div>
           </div>
-        </div>
-        <div class="container my-2 z-top">
-          <div class="row">
-            <div class="col my-2 fs-5" id="intro">
-              Hi!, My name is,
-            </div>
-          </div>
-          <div class="row fs-1" id="name">
-            <div class="col">
-              Sri Lakshmi <u>Kanth</u>an
-            </div>
-          </div>
-          <div class="row fs-3" id="who">
-            <div class="col">
-              <p>
-                <span class="intro">I'm</span>
-                <span class="content"></span>
-                <span class="cursor">|</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div id="top-mail">
-          <div class="container z-top"">
+        </nav>
+      </header>
+      <main>
+        <section id="home">
+          <div class="container">
             <div class="row">
-              <div class="col text-end">
-                <a href="mailto:srilakshmikanthanp@gmail.com">srilakshmikanthanp@gmail.com</a>
+              <div class="col-12">
+                <p class="fs-5 my-0 font-monospace sec-col">
+                  Hi, My Name is,
+                </p>
+                <h1 class="my-0 font-oxygen">
+                  Sri Lakshmi Kanthan
+                </h1>
+                <p class="fs-5 my-0 font-monospace sec-col">
+                </p>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section id="about" class="d-flex align-items-center justify-content-center">
-        <div class="container">
-          <div class="row">
-            <div class="col fs-3 text-center">
+        </section>
+        <section id="about">
+          <div class="container">
+            <h2 class="font-oxygen">
               About Me
-            </div>
-            <hr>
-          </div>
-          <div class="row my-3">
-            <div class="col text-center">
-              Hello, I am Sri Lakshmi Kanthan a student from TamilNadu, Currently studing Information Technology at
-              Anna University, Trichy. I am a self-taught Developer and I love to learn new things. Other than 
-              programming I love math and physics.
-            </div>
-          </div>
-          <div class="row my-5 align-items-center">
-            <div class="col-lg-6 py-2">
-              <div class="my-img mx-auto d-block">
-                <img 
-                src="https://avatars.githubusercontent.com/u/56999577?v=4"
-                alt="srilakshmikanthanp"
-                class="img-fluid rounded img-thumbnail"
-                />
+              <hr>
+            </h2>
+            <div class="row">
+              <div class="col-md-12 col-lg-6">
+                <div class="txt-wrapper">
+                  <p>
+                    Hello, I am Sri Lakshmi Kanthan a student from TamilNadu, Currently studing Information Technology at
+                    Anna University, Trichy. I am a self-taught Developer and I love to learn new things. Other than 
+                    programming I love math and physics.
+                    <br /><br />
+                    Since 11<sup>th</sup> std I'm in love with Programming. I started with C After that I learned Some 
+                    languages and tools and going to learn new things.
+                    <div class="container-fluid p-0">
+                      <div class="row">
+                        <div class="col">
+                          <ul class="list-unstyled font-monospace fs-6">
+                            <li>
+                              <i data-feather="chevron-right"></i> 
+                              <b>Birthday: </b>01/09/2002
+                            </li>
+                            <li>
+                              <i data-feather="chevron-right"></i>
+                              <b>Age: </b>18
+                            </li>
+                            <li>
+                              <i data-feather="chevron-right"></i>
+                              <b>Phone: </b>+91 9788852091
+                            </li>
+                            <li>
+                              <i data-feather="chevron-right"></i> 
+                              <b>University: </b>Anna University
+                            </li>
+                            <li>
+                              <i data-feather="chevron-right"></i>
+                              <b>Degree: </b>B.Tech
+                            </li>
+                            <li>
+                              <i data-feather="chevron-right"></i>
+                              <b>Graduate: </b>No
+                            </li>
+                            <li>
+                              <i data-feather="chevron-right"></i>
+                              <b>Place: </b> TamilNadu, India.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-6">
+                <div class="img-wrapper">
+                  <img 
+                    class="img-fluid rounded img-decoration"
+                    src="https://avatars.githubusercontent.com/u/56999577?v=4"
+                  />
+                </div>
               </div>
             </div>
-            <div class="col-lg-6 py-2">
-              <div class="row">
-                <div class="col text-center">
-                  <h3>Early Life</h3>
-
-                  <p>I was born in sep 01, 2002, in TamilNadu, India. I finished my Secondary school education
-                  in Little flower school in kumbakonam at 2017, TamilNadu. after that I finished my Higher
-                  Secondary education in Litttle flower school in kumbakonam at 2019, TamilNadu. I started
-                  My Information Technology in Anna University, Trichy, TamilNadu.</p>
-
-                  <h3>&lt;Code/&gt;</h3>
-
-                  <p>Since 11<sup>th</sup> class I'm in love with Programming. I started with C After that
-                  I learned Some languages and tools and going to learn new things.</p>
+          </div>
+        </section>
+        <section id="tools">
+          <div class="container">
+            <h2 class="font-oxygen text-end">
+              My Tools
+              <hr>
+            </h2>
+            <div class="row">
+              <div class="col-md-12 col-lg-6">
+                <div class="img-wrapper">
+                  <img 
+                    class="img-fluid rounded"
+                    src="/image/dev.png"
+                  />
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-6">
+                <div class="txt-wrapper">
+                  <p>
+                    I learn new things every day But I am showing my mostly or recently using languages,
+                    frameworks and tools.
+                    <div class="container-fluid p-0">
+                      <div class="row">
+                        <div class="col-sm-12 col-md">
+                          <h4 class="font-oxygen">
+                            Languages
+                          </h4>
+                          <ul class="list-unstyled font-monospace">
+                            <li><i data-feather="chevron-right"></i> C/C++</li>
+                            <li><i data-feather="chevron-right"></i> Java</li>
+                            <li><i data-feather="chevron-right"></i> Python</li>
+                            <li><i data-feather="chevron-right"></i> PHP</li>
+                            <li><i data-feather="chevron-right"></i> HTML/CSS</li>
+                            <li><i data-feather="chevron-right"></i> Javascript</li>
+                          </ul>
+                        </div>
+                        <div class="col-sm-12 col-md">
+                          <h4 class="font-oxygen">
+                            Frameworks
+                          </h4>
+                          <ul class="list-unstyled font-monospace">
+                            <li><i data-feather="chevron-right"></i> Bootstrap</li>
+                            <li><i data-feather="chevron-right"></i> Jquery UI</li>
+                            <li><i data-feather="chevron-right"></i> Jquery</li>
+                          </ul>
+                        </div>
+                        <div class="col-sm-12 col-md">
+                          <h4 class="font-oxygen">
+                            Tools
+                          </h4>
+                          <ul class="list-unstyled font-monospace">
+                            <li><i data-feather="chevron-right"></i> Git</li>
+                            <li><i data-feather="chevron-right"></i> Github</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact">
+          <div class="container">
+            <h2 class="font-oxygen">
+              Contact Me
+              <hr>
+            </h2>
+            <div class="row">
+              <div class="col-md-12 col-lg-6">
+                <p>
+                  My inbox is always open. Whether you have a question or just want to say hi, 
+                  I'll try my best to get back to you!
+                  <div class="btn button">
+                    <a href="mailto:srilakshmikanthanp@gmail.com">
+                      Get In Touch !
+                    </a>
                   </div>
+                </p>
+              </div>
+              <div class="col-md-12 col-lg-6">
+                <div class="img-wrapper">
+                  <img 
+                    class="img-fluid rounded"
+                    src="/image/contact.png"
+                  />
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section id="skils" class="d-flex align-items-center justify-content-center">
-        <div class="container text-center">
-          <h3>Languages</h3>
-          <hr>
-          <div class="d-flex flex-wrap align-items-center justify-content-center py-3">
-            <div class="toolpane">C</div>
-            <div class="toolpane">C++</div>
-            <div class="toolpane">Asm</div>
-            <div class="toolpane">Arduino</div>
-            <div class="toolpane">Java</div>
-            <div class="toolpane">Golang</div>
-            <div class="toolpane">Python</div>
-            <div class="toolpane">Html/Css</div>
-            <div class="toolpane">Javascript</div>
+        </section>
+      </main>
+      <footer>
+        <div class="container">
+          <div class="text-center m-3">
+            <a href="mailto:srilakshmikanthanp@gmail.com" class="p-2">
+              <i data-feather="phone"></i>
+            </a>
+            <a href="https://github.com/srilakshmikanthanp" class="p-2">
+              <i data-feather="github"></i>
+            </a>
+            <a href="https://twitter.com/srilaxmikanthan" class="p-2">
+              <i data-feather="twitter"></i>
+            </a>  
+            <a href="https://www.instagram.com/srilakshmikanthanp/" class="p-2">
+              <i data-feather="instagram"></i>
+            </a>
+            <a href="#" class="p-2">
+              <i data-feather="facebook"></i>
+            </a>
           </div>
-          <h3>FrameWorks</h3>
-          <hr>
-          <div class="d-flex flex-wrap align-items-center justify-content-center py-3">
-            <div class="toolpane">Bootstrap</div>
-            <div class="toolpane">Jquery</div>
-            <div class="toolpane">Jquery UI</div>
-          </div>
-          <h3>Tools</h3>
-          <hr>
-          <div class="d-flex flex-wrap align-items-center justify-content-center py-3">
-            <div class="toolpane">Git/Github</div>
+          <div class="text-center m-3 font-monospace">
+            <p class="p-2 fs-6">
+              Design &amp; Build by Sri Lakshmi Kanthan
+            </p>
           </div>
         </div>
-      </section>
-      <section id="contact" class="d-flex align-items-center justify-content-center">
-        <div class="container text-center">
-          <form>
-            <fieldset>
-              <legend class="fs-2 py-2">Get In Touch</legend>
-              <div class="mb-3">
-                <input type="text" class="form-control" placeholder="Subject" id="contactsubject" required="required">
-              </div>
-              <div class="mb-3">
-                <textarea class="form-control mb-3" placeholder="Message" rows="6" id="contactmessage" aria-describedby="msg-note" required></textarea>
-                <div class="form-text" id="msg-note">
-                  This Will Open Your Email Client with filled Message
-                </div>
-              </div>
-              <div class="mb-3">
-                <button type="submit" class="btn btn-primary" id="contactsubmit">Send</button>
-              </div>
-            </fieldset>
-          </form>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <div class="d-flex align-items-center justify-content-center my-1">
-        <a href="https://www.github.com/srilakshmikanthanp" target="_blank" class="mx-1">
-          <i data-feather="github"></i>
-        </a>
-        <a href="https://twitter.com/srilaxmikanthan" target="_blank" class="mx-1">
-          <i data-feather="twitter"></i>
-        </a>
-        <a href="https://www.facebook.com/sri.l.kanthan.1/" target="_blank" class="mx-1">
-          <i data-feather="facebook"></i>
-        </a>
-        <a href="https://www.instagram.com/srilakshmikanthanp/" target="_blank" class="mx-1">
-          <i data-feather="instagram"></i>
-        </a>
-      </div>
-      <div class="d-flex align-items-center justify-content-center my-1">
-        <a href="mailto:srilakshmikanthanp@mail.com">
-          srilakshmikanthanp@gmail.com
-        </a>
-      </div>
-      <div class="d-flex align-items-center justify-content-center my-1">
-          Made with &hearts; by Sri Lakshmi Kanthan
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
