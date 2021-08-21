@@ -160,6 +160,7 @@ header nav div.d-min .menu-btn {
 header nav div.d-min .sidebar {
   width: 0px;
   height: 100vh;
+  min-height: -webkit-fill-available;
   position: fixed;
   top: 0%;
   right: 0%;
