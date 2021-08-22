@@ -4,6 +4,20 @@
 // https://opensource.org/licenses/MIT
 
 /**
+ * change bg of nav on scroll
+ */
+function navBg(evt) {
+  var nav = $("nav");
+  var pos = $(window).scrollTop();
+
+  if (pos > 0) {
+    nav.addClass("scroll");
+  } else {
+    nav.removeClass("scroll");
+  }
+}
+
+/**
  * SideBar menu button click
  */
 function menuButtonClick(evt) {
@@ -83,4 +97,5 @@ function main() {
   // event listeners
   $("a[href^='#']").on("click", smoothScroll);
   $(".menu-btn").on("click", menuButtonClick);
+  $(window).on("scroll", navBg);
 }

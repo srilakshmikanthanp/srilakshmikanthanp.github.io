@@ -108,6 +108,10 @@ header nav {
   height: 100px;
   padding: 10px;
   color: rgb(var(--pri-fg-col));
+  transition: background-color 0.5s linear;
+}
+
+header nav.scroll {
   background-color: rgba(var(--pri-bg-col), 0.9);
 }
 
