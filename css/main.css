@@ -55,10 +55,6 @@
   justify-content: center;
 }
 
-.img-decoration {
-  box-shadow: 2px 2px 2px rgb(var(--sec-fg-col));
-}
-
 .button {
   width: 150px;
   height: 50px;
@@ -93,13 +89,9 @@
   }
 }
 
-p {
-  font-size: 1.1rem !important;
-}
-
 @media (hover: hover) {
   html {
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
   }
 }
 
@@ -204,12 +196,6 @@ section {
   justify-content: center;
 }
 
-@media (hover: hover) {
-  section {
-    scroll-snap-align: start;
-  }
-}
-
 section#home {
   min-height: 100vh;
 }
@@ -223,6 +209,27 @@ section#home p:last-child::after {
   animation: blink 1s infinite;
 }
 
+section#about div.img-wrapper span {
+  position: relative;
+}
+
+section#about div.img-wrapper span::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 10px;
+  border-right: 2px solid rgb(var(--sec-fg-col));
+  border-bottom: 2px solid rgb(var(--sec-fg-col));
+}
+
+section#about div.img-wrapper span:hover::after {
+  right: -15px;
+  bottom: -15px;
+}
+
 section#tools .img-wrapper{
   width: 500px !important;
   height: 500px !important;
@@ -231,7 +238,6 @@ section#tools .img-wrapper{
 footer {
   min-height: 100px;
   margin-top: 40px;
-  scroll-snap-align: start;
 }
 
 footer a {
@@ -241,4 +247,11 @@ footer a {
 
 footer a:hover {
   color: rgb(var(--sec-fg-col)) !important;
+}
+
+@media (hover: hover) {
+  section, footer {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
 }
