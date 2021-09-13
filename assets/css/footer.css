@@ -1,0 +1,20 @@
+/**
+ * Copyright (c) 2021 Sri Lakshmi Kanthan P
+ * 
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
+
+footer {
+  min-height: 100px;
+  margin-top: 100px;
+}
+
+footer a {
+  color: rgb(var(--pri-fg-col)) !important;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: rgb(var(--sec-fg-col)) !important;
+}

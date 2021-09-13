@@ -7,6 +7,7 @@ This is My Source Code for my personal website, If You Want To use this code You
 - HTML/CSS
 - Bootstrap
 - JavaScript/Jquery
+- Jekyll
 
 ## LICENSE
 

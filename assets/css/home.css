@@ -1,0 +1,94 @@
+/**
+ * Copyright (c) 2021 Sri Lakshmi Kanthan P
+ * 
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
+
+.font-oxygen {
+  font-family: "Oxygen", sans-serif;
+}
+
+.txt-wrapper {
+  text-align: left;
+}
+
+.img-wrapper {
+  width: 100%;
+  height: 100%;
+  max-width: 350px;
+  max-height: 350px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  width: 150px;
+  height: 50px;
+  border: 1px solid rgb(var(--sec-bg-col));
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button a {
+  color: rgb(var(--pri-fg-col));
+  text-decoration: none;
+}
+
+.button:hover {
+  background: rgba(var(--sec-bg-col), 0.4);
+}
+
+section {
+  padding: 30px;
+  padding-top: 130px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section#home {
+  min-height: 100vh;
+}
+
+section#home .sec-col {
+  color: rgb(var(--sec-fg-col));
+}
+
+section#home p:last-child::after {
+  content: "|";
+  animation: blink 1s infinite;
+}
+
+section#about div.img-wrapper span {
+  position: relative;
+}
+
+section#about div.img-wrapper span::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 10px;
+  border-right: 2px solid rgb(var(--sec-fg-col));
+  border-bottom: 2px solid rgb(var(--sec-fg-col));
+}
+
+section#about div.img-wrapper span:hover::after {
+  right: -15px;
+  bottom: -15px;
+}
+
+section#tools .img-wrapper {
+  width: 500px !important;
+  height: 500px !important;
+}
