@@ -62,7 +62,7 @@ header nav div.nav-container ul.nav li a:hover {
     transition: width 0.3s ease-out;
     border-radius: 10px;
   }
-  
+
   header nav div.nav-container ul.nav li a:hover::after {
     width: 100%;
     left: 0%;
@@ -88,12 +88,12 @@ header nav div.nav-container ul.nav li a:hover {
     right: 0%;
     z-index: -1;
     color: rgb(var(--pri-fg-col));
-    background-color: rgba(var(--pri-bg-col), 0.9);
+    background-color: rgb(var(--pri-bg-col));
     transition: width 0.5s linear;
   }
 
   header nav div.nav-container.open {
-    width: 300px;
+    width: 200px;
     box-shadow: 0px 0px 0px 100vw rgba(0, 0, 0, 0.5);
   }
 

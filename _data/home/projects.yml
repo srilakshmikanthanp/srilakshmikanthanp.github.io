@@ -1,0 +1,19 @@
+title: My Projects
+grepo: https://github.com/srilakshmikanthanp?tab=repositories
+repos:
+  - name: QuickNote
+    lang: Java
+    link: https://github.com/srilakshmikanthanp/QuickNote
+  - name: ChatViewer
+    lang: JS
+    link: https://github.com/srilakshmikanthanp/ChatViewer
+  - name: ANSI
+    lang: C++
+    link: https://github.com/srilakshmikanthanp/ANSI
+  - name: Figlet
+    lang: C++
+    link: https://github.com/srilakshmikanthanp/Figlet
+  - name: VsFiglet
+    lang: TypeScript
+    link: https://github.com/srilakshmikanthanp/VsFiglet
+image: /assets/images/project.webp

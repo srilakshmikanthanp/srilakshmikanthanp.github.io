@@ -5,27 +5,6 @@
  * https://opensource.org/licenses/MIT
  */
 
-.font-oxygen {
-  font-family: "Oxygen", sans-serif;
-}
-
-.txt-wrapper {
-  text-align: left;
-}
-
-.img-wrapper {
-  width: 100%;
-  height: 100%;
-  max-width: 350px;
-  max-height: 350px;
-  margin: auto;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 .button {
   width: 150px;
   height: 50px;
@@ -45,50 +24,104 @@
   background: rgba(var(--sec-bg-col), 0.4);
 }
 
-section {
+.img-wrapper {
+  width: 100%;
+  height: 100%;
+  max-width: 350px;
+  max-height: 350px;
+  margin: auto;
   padding: 30px;
-  padding-top: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes zoom-in-out {
+  0% {
+    transform: scale(1.0);
+  }
+
+  50% {
+    transform: scale(1.1); 
+  }
+
+  100% {
+    transform: scale(1.0);
+  }
+}
+
+.img-wrapper :hover {
+  animation: zoom-in-out 0.5s;
+}
+
+section {
+  padding: 20px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-section#home {
+section#intro {
   min-height: 100vh;
 }
 
-section#home .sec-col {
+section#intro p:nth-child(1), 
+section#intro p:nth-child(3) {
+  font-family: monospace;
   color: rgb(var(--sec-fg-col));
 }
 
-section#home p:last-child::after {
+section#intro p:nth-child(2) {
+  font-family: "Oxygen", sans-serif;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+section#intro p:nth-child(3)::after {
   content: "|";
-  animation: blink 1s infinite;
+  animation: blink 0.5s infinite;
 }
 
-section#about div.img-wrapper span {
-  position: relative;
+section:not(section#intro) {
+  padding-top: 180px;
 }
 
-section#about div.img-wrapper span::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  right: -10px;
-  bottom: -10px;
-  border-radius: 10px;
-  border-right: 2px solid rgb(var(--sec-fg-col));
-  border-bottom: 2px solid rgb(var(--sec-fg-col));
+section#projects table {
+  color: rgb(var(--pri-fg-col));
 }
 
-section#about div.img-wrapper span:hover::after {
-  right: -15px;
-  bottom: -15px;
+section#projects table tr td {
+  border-color: rgba(var(--sec-bg-col), 0.6);
 }
 
-section#tools .img-wrapper {
-  width: 500px !important;
-  height: 500px !important;
+section#projects table tr:hover td {
+  background-color: rgba(var(--sec-bg-col), 0.4);
+  cursor: pointer;
+}
+
+section#projects table + p {
+  color: rgb(var(--sec-fg-col));
+  font-style: italic;
+}
+
+section#projects table + p > a {
+  color: inherit;
+}
+
+section#contact p {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
 }

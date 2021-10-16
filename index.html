@@ -6,180 +6,148 @@ layout: "default"
 ---
 
 <main>
-    <section id="home">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <p class="fs-5 my-0 font-monospace sec-col">
-              Hi, My Name is,
-            </p>
-            <h1 class="my-0 font-oxygen">
-              Sri Lakshmi Kanthan
-            </h1>
-            <p class="fs-5 my-0 font-monospace sec-col">
-            </p>
+  <section id="intro">
+    <div class="container">
+      <p class="fs-5 my-0">
+        Hi!, My Name is,
+      </p>
+      <p class="fs-1 my-0">
+        Sri Lakshmi Kanthan
+      </p>
+      <p class="fs-5 my-0">
+        <!-- Filled by Js -->
+      </p>
+    </div>
+  </section>
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-6">
+          <h2 class="text-start">
+            {{ site.data.home.about.title | markdownify }}
+            <hr>
+          </h2>
+          <p class="text-start">
+            {{ site.data.home.about.brief | markdownify }}
+          </p>
+        </div>
+        <div class="col-md-12 col-lg-6">
+          <div class="img-wrapper">
+            <img 
+              src="{{ site.data.home.about.image }}" 
+              class="img-fluid rounded"
+              alt="Sri Lakshmi Kanthan"
+            />
           </div>
         </div>
       </div>
-    </section>
-    <section id="about">
-      <div class="container">
-        <h2 class="font-oxygen">
-          About Me
-          <hr>
-        </h2>
-        <div class="row">
-          <div class="col-md-12 col-lg-6">
-            <div class="txt-wrapper">
-              <p>
-                Hello, I am Sri Lakshmi Kanthan a student from TamilNadu, Currently studing Information Technology at
-                Anna University, Trichy. I am a self-taught Developer and I love to learn new things. Other than 
-                programming I love math and physics.
-                <br /><br />
-                I was born in kumbakonam, which is in thanjauvr. I have complited my schooling in little flower higher
-                secondary school. After that I joined Information Technology in Anna University (University College of
-                engineering), Trichy.
-                <br /><br />
-                Since 11<sup>th</sup> std I'm in love with Programming. I started with C After that I learned Some 
-                languages and tools and going to learn new things.
-                <div class="container-fluid p-0">
-                  <div class="row">
-                    <div class="col-md-12 col-lg-6">
-                      <ul class="list-unstyled m-0">
-                        <li>
-                          <i data-feather="chevron-right"></i> 
-                          <b>Birthday: </b>01/09/2002
-                        </li>
-                        <li>
-                          <i data-feather="chevron-right"></i>
-                          <b>Phone: </b>+91 9788852091
-                        </li>
-                        <li>
-                          <i data-feather="chevron-right"></i> 
-                          <b>University: </b>UCE, Trichy
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="col-md-12 col-lg-6">
-                      <ul class="list-unstyled m-0">
-                        <li>
-                          <i data-feather="chevron-right"></i>
-                          <b>Degree: </b>B.Tech
-                        </li>
-                        <li>
-                          <i data-feather="chevron-right"></i>
-                          <b>Graduate: </b>No
-                        </li>
-                        <li>
-                          <i data-feather="chevron-right"></i>
-                          <b>Place: </b> TamilNadu, India.
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </p>
-            </div>
-          </div>
-          <div class="col-md-12 col-lg-6">
-            <div class="img-wrapper">
-              <span>
-                <img
-                  class="img-fluid rounded img-decoration"
-                  src="https://avatars.githubusercontent.com/u/56999577?v=4"
-                  alt="Sri Lakshmi Kanthan P"
-                />
-              </span>
-            </div>
+    </div>
+  </section>
+  <section id="tools">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-6">
+          <div class="img-wrapper">
+            <img 
+              src="{{ site.data.home.tools.image }}" 
+              class="img-fluid rounded"
+            />
           </div>
         </div>
-      </div>
-    </section>
-    <section id="tools">
-      <div class="container">
-        <h2 class="font-oxygen text-end">
-          My Tools
-          <hr>
-        </h2>
-        <div class="row">
-          <div class="col-md-12 col-lg-6">
-            <div class="img-wrapper">
-              <img 
-                class="img-fluid rounded"
-                src="/assets/images/dev.png"
-              />
-            </div>
+        <div class="col-md-12 col-lg-6">
+          <h2 class="text-start">
+            {{ site.data.home.tools.title | markdownify }}
+            <hr>
+          </h2>
+          <div class="text-start">
+            {{ site.data.home.tools.brief | markdownify }}
           </div>
-          <div class="col-md-12 col-lg-6">
-            <div class="txt-wrapper">
-              <p>
-                I learn new things every day But I am showing recently using languages,
-                frameworks and tools.
-                <div class="container-fluid p-0">
-                  <div class="row">
-                    <div class="col-sm-12 col-md">
-                      <h4 class="font-oxygen">
-                        Languages
-                      </h4>
-                      <ul class="list-unstyled">
-                        <li><i data-feather="chevron-right"></i> C/C++</li>
-                        <li><i data-feather="chevron-right"></i> Java</li>
-                        <li><i data-feather="chevron-right"></i> Python</li>
-                        <li><i data-feather="chevron-right"></i> PHP</li>
-                        <li><i data-feather="chevron-right"></i> HTML/CSS</li>
-                        <li><i data-feather="chevron-right"></i> Javascript</li>
-                      </ul>
-                    </div>
-                    <div class="col-sm-12 col-md">
-                      <h4 class="font-oxygen">
-                        Frameworks
-                      </h4>
-                      <ul class="list-unstyled">
-                        <li><i data-feather="chevron-right"></i> Bootstrap</li>
-                        <li><i data-feather="chevron-right"></i> Jquery</li>
-                        <li><i data-feather="chevron-right"></i> Jquery UI</li>
-                        <li><i data-feather="chevron-right"></i> Swing</li>
-                        <li><i data-feather="chevron-right"></i> JavaFx</li>
-                      </ul>
-                    </div>
-                    <div class="col-sm-12 col-md">
-                      <h4 class="font-oxygen">
-                        Tools
-                      </h4>
-                      <ul class="list-unstyled">
-                        <li><i data-feather="chevron-right"></i> Git</li>
-                        <li><i data-feather="chevron-right"></i> Github</li>
-                        <li><i data-feather="chevron-right"></i> Jekyll</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </p>
+          <div class="container-fluid p-0">
+            <div class="row">
+              <div class="col-sm-12 col-md">
+                <h4 class="font-oxygen">
+                  Languages
+                </h4>
+                <ul class="list-unstyled">
+                  {% for lang in site.data.home.tools.langs %}
+                    <li><i data-feather="chevron-right"></i> {{ lang }} </li>
+                  {% endfor %}
+                </ul>
+              </div>
+              <div class="col-sm-12 col-md">
+                <h4 class="font-oxygen">
+                  Frameworks
+                </h4>
+                <ul class="list-unstyled">
+                  {% for fwork in site.data.home.tools.fwork %}
+                    <li><i data-feather="chevron-right"></i> {{ fwork }} </li>
+                  {% endfor %}
+                </ul>
+              </div>
+              <div class="col-sm-12 col-md">
+                <h4 class="font-oxygen">
+                  Tools
+                </h4>
+                <ul class="list-unstyled">
+                  {% for tool in site.data.home.tools.tools %}
+                    <li><i data-feather="chevron-right"></i> {{ tool }} </li>
+                  {% endfor %}
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <section id="contact">
-      <div class="container">
-        <h2 class="font-oxygen text-center">
-          Contact Me
-          <hr>
-        </h2>
-        <div class="row">
-          <div class="col">
-            <p class="text-center">
-              My inbox is always open. Whether you have a question or just want to say hi, 
-              I'll try my best to get back to you!
-            </p>
-            <div class="btn button m-auto">
-              <a href="mailto:srilakshmikanthanp@gmail.com">
-                Get In Touch !
-              </a>
-            </div>
+    </div>
+  </section>
+  <section id="projects">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-6">
+          <h2 class="text-start">
+            {{ site.data.home.projects.title | markdownify }}
+            <hr>
+          </h2>
+          <table class="table">
+            <tbody>
+              {% for repo in site.data.home.projects.repos %}
+                <tr data-link="{{repo.link}}">
+                  <td>{{repo.name}}</td>
+                  <td>{{repo.lang}}</td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+          <p class="fs-6 text-center">
+            for more visit <a href="{{site.data.home.projects.grepo}}">github</a>
+          </p>
+        </div>
+        <div class="col-md-12 col-lg-6">
+          <div class="img-wrapper">
+            <img 
+              src="{{ site.data.home.projects.image }}" 
+              class="img-fluid rounded"
+              alt="Projects"
+            />
           </div>
         </div>
       </div>
-    </section>
-  </main>
-  
+    </div>
+  </section>
+  <section id="contact">
+    <div class="container">
+      <p class="h2 text-center p-0">
+        Contact Me
+      </p>
+      <p class="text-center">
+        My inbox is always open. Whether you have a question or 
+        just want to say hi, I'll try my best to get back to you!
+      </p>
+      <div class="btn button m-auto">
+        <a href="mailto:srilakshmikanthanp@gmail.com">
+          Get In Touch !
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
