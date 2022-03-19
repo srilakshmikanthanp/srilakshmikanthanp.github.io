@@ -2,7 +2,7 @@ title: My Projects
 grepo: https://github.com/srilakshmikanthanp?tab=repositories
 repos:
   - name: QuickNote
-    lang: Java
+    lang: Java/Kotlin
     link: https://github.com/srilakshmikanthanp/QuickNote
   - name: ChatViewer
     lang: JS

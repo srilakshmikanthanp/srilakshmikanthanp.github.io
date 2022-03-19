@@ -5,18 +5,22 @@ brief: |
   at all but I can work with all of them with browser tab for docs 😂
 langs:
   - C/C++
-  - Java
+  - Java/Kotlin
   - Python
-  - PHP
+  - Nodejs
   - HTML/CSS
   - JavaScript
   - TypeScript
+  - SQL
 fwork:
   - Bootstrap
   - JQuery
   - JQuery UI
   - Swing
   - Javafx
+  - React/Redux/Router
+  - Flask
+  - Expressjs
 tools:
   - Git/Github
   - Jekyll
