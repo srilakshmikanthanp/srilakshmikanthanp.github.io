@@ -4,8 +4,9 @@ brief: |
   But I am showing recently using languages, frameworks and tools. I'm not Master
   at all but I can work with all of them with browser tab for docs 😂
 langs:
-  - C/C++
+  - C/C++/NASM
   - Java/Kotlin
+  - Golang
   - Python
   - Nodejs
   - HTML/CSS

@@ -7,11 +7,11 @@
  * @brief auto text effect for id who
  */
 async function textTypingEffect() {
-  var data = ["I'm a Student !", " I'm a Programmer !"];
-  var who = $("section#intro p:last-child");
-  var len = data.length;
+  let data = ["I'm a Student !", " I'm a Programmer !"];
+  let who = $("section#intro p:last-child");
+  let len = data.length;
 
-  var wait = (ms) => new Promise((resolve) => {
+  let wait = (ms) => new Promise((resolve) => {
     setTimeout(resolve, ms);
   });
 
@@ -34,7 +34,7 @@ async function textTypingEffect() {
  * @brief projects link click
  */
 function projectsTrClick(evt) {
-  var link = $(evt.currentTarget).data('link');
+  let link = $(evt.currentTarget).data('link');
   console.log(evt.currentTarget);
   window.open(link);
 }
@@ -43,8 +43,8 @@ function projectsTrClick(evt) {
  * @brief smooth scroll for links
  */
 function smoothScroll(evt) {
-  var target = $(evt.currentTarget).attr("href");
-  var toppos = $(target).offset().top;
+  let target = $(evt.currentTarget).attr("href");
+  let toppos = $(target).offset().top;
 
   $("html, body").animate({
     scrollTop: toppos

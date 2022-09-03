@@ -5,7 +5,7 @@ repos:
     lang: Java/Kotlin
     link: https://github.com/srilakshmikanthanp/QuickNote
   - name: ChatViewer
-    lang: JS
+    lang: TS
     link: https://github.com/srilakshmikanthanp/ChatViewer
   - name: ANSI
     lang: C++
@@ -16,4 +16,7 @@ repos:
   - name: VsFiglet
     lang: TypeScript
     link: https://github.com/srilakshmikanthanp/VsFiglet
+  - name: Facsimile
+    lang: TS
+    link: https://github.com/srilakshmikanthanp/Facsimile
 image: /assets/images/project.webp

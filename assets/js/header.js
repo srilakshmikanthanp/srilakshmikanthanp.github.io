@@ -4,20 +4,6 @@
 // https://opensource.org/licenses/MIT
 
 /**
- * change bg of nav on scroll
- */
-function navBg(evt) {
-  var nav = $("nav");
-  var pos = $(window).scrollTop();
-
-  if (pos > 0) {
-    nav.addClass("scroll");
-  } else {
-    nav.removeClass("scroll");
-  }
-}
-
-/**
  * SideBar menu button click
  */
 function menuButtonClick(evt) {
@@ -33,9 +19,23 @@ function menuButtonClick(evt) {
 }
 
 /**
+ * change bg of nav on scroll
+ */
+function navBg(evt) {
+  let pos = $(window).scrollTop();
+  let nav = $("nav");
+
+  if (pos > 0) {
+    nav.addClass("scroll");
+  } else {
+    nav.removeClass("scroll");
+  }
+}
+
+/**
  * main function
  */
-$(function(){
+$(function () {
   // event listeners
   $("button.nav-toggle").on("click", menuButtonClick);
   $(window).on("scroll", navBg);

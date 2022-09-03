@@ -13,11 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.button a {
   color: rgb(var(--pri-fg-col));
-  text-decoration: none;
 }
 
 .button:hover {
@@ -124,4 +120,8 @@ section#contact p {
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
+}
+
+section#contact a {
+  text-decoration: none !important;
 }
