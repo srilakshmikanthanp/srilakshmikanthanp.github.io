@@ -11,6 +11,7 @@
     "@types/react": "^18.0.19",
     "@types/react-dom": "^18.0.6",
     "bootstrap": "^5.2.1",
+    "feather-icons": "^4.29.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",
@@ -44,6 +45,7 @@
     ]
   },
   "devDependencies": {
+    "@types/feather-icons": "^4.7.0",
     "@types/styled-components": "^5.1.26"
   }
 }

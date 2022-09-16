@@ -1,0 +1,30 @@
+/**
+ * Copyright (c) 2022 Sri Lakshmi Kanthan P
+ *
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+:root {
+  --pri-fg-color: rgb(255, 255, 255);
+  --pri-bg-color: rgb(10, 25, 47);
+  --sec-fg-color: rgb(100, 255, 218);
+  --sec-bg-color: rgb(100, 255, 218);
+  --shadow-color: rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgb(var(--sec-bg-col));
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  background: rgb(var(--pri-bg-col));
+}
+
+:root {
+  font-family: var(--bs-font-sans-serif);
+  font-size: 1.05rem;
+}
