@@ -12,7 +12,11 @@ import * as feather from "feather-icons";
  * @returns path
  */
 export function getFeather(name: string) {
-  return `data:image/svg+xml;charset=utf-8, ${encodeURIComponent(feather.icons[name].toSvg({
+  // Svg Url String
+  const svgUrlString = encodeURIComponent(feather.icons[name].toSvg({
     color: 'white'
-  }))}`;
+  }));
+
+  // Get back
+  return `data:image/svg+xml;charset=utf-8, ${svgUrlString}`;
 }

@@ -13,9 +13,10 @@ const Navigation = styled.div`
   color: var(--pri-fg-color);
   padding: 20px;
   height: 70px;
-  width: 100vw;
+  width: 100%;
   display: flex;
   align-items: center;
+  position: fixed;
 `;
 
 const Logo = styled.img`
@@ -63,7 +64,7 @@ const NavLinks = styled.div<{
     align-items: center;
     position: fixed;
     transition: all 0.5s ease-in-out;
-    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    box-shadow: 0 0 10px var(--shadow-color)
   }
 
   @media (min-width: 768px) {
@@ -179,8 +180,8 @@ export default function Header() {
           alt="Close"
           src={getFeather('x')}
         />
-        <NavLink href="#introduction">
-          Introduction
+        <NavLink href="#intro">
+          Intro
         </NavLink>
         <NavLink href="#about">
           About

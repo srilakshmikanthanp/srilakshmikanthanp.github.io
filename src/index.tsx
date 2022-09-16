@@ -3,6 +3,7 @@
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
 
+import "./styles/global.module.css";
 import ReactDOM from "react-dom";
 import App from "./App";
 

@@ -15,13 +15,13 @@
 }
 
 ::-webkit-scrollbar-thumb {
+  background: var(--sec-bg-color);
   border-radius: 10px;
-  background: rgb(var(--sec-bg-col));
 }
 
 ::-webkit-scrollbar {
+  background: var(--pri-bg-color);
   width: 7px;
-  background: rgb(var(--pri-bg-col));
 }
 
 :root {
