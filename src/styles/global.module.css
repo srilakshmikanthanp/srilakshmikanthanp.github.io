@@ -7,20 +7,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 :root {
-  --pri-fg-color: rgb(255, 255, 255);
-  --pri-bg-color: rgb(10, 25, 47);
-  --sec-fg-color: rgb(100, 255, 218);
-  --sec-bg-color: rgb(100, 255, 218);
-  --shadow-color: rgba(0, 0, 0, 0.5);
+  --pri-fg-color: 255, 255, 255;
+  --pri-bg-color: 10, 25, 47;
+  --sec-fg-color: 100, 255, 218;
+  --sec-bg-color: 100, 255, 218;
+  --shadow-color: 0, 0, 0, 0.5;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--sec-bg-color);
+  background: rgb(var(--sec-bg-color));
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar {
-  background: var(--pri-bg-color);
+  background: rgb(var(--pri-bg-color));
   width: 7px;
 }
 
@@ -30,6 +30,6 @@
 }
 
 html, body {
-  background-color: var(--pri-bg-color);
-  color: var(--pri-fg-color);
+  background-color: rgb(var(--pri-bg-color));
+  color: rgb(var(--pri-fg-color));
 }

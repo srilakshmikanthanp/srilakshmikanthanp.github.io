@@ -18,16 +18,19 @@ const TsParticles = styled(Particles)`
   z-index: 0;
 `;
 
+// Main
+const Main = styled.main`
+  position: relative;
+  z-index: 1;
+`;
+
 /**
  * Application Component
  */
 export default function App() {
-  return (
-    <React.Fragment>
-      <TsParticles
-        url="/particles-presets/particles.json"
-        init={loadFull}
-      />
+  // content
+  const Content = () => (
+    <Main>
       <Header />
       <Intro />
       <About />
@@ -35,6 +38,14 @@ export default function App() {
       <Projects />
       <Contact />
       <Footer />
+    </Main>
+  );
+
+  // Render
+  return (
+    <React.Fragment>
+      <TsParticles url="/particles-presets/particles.json" init={loadFull} />
+      <Content />
     </React.Fragment>
   );
 }

@@ -17,21 +17,21 @@ const IntroWrapper = styled.section`
 `;
 
 const Header = styled.header`
-  color: var(--sec-fg-color);
+  color: rgb(var(--sec-fg-color));
   font-size: 1.2rem;
   text-align: center;
   font-family: monospace;
 `;
 
 const Body = styled.span`
-  color: var(--pri-fg-color);
+  color: rgb(var(--pri-fg-color));
   font-size: 1.7rem;
   text-align: center;
   font-family: monospace;
 `;
 
 const Footer = styled.footer`
-  color: var(--sec-fg-color);
+  color: rgb(var(--sec-fg-color));
   font-size: 1.2rem;
   text-align: center;
   display: flex;

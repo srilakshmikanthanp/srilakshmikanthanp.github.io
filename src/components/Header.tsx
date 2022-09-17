@@ -9,9 +9,8 @@ import styled from 'styled-components';
 import React from "react";
 
 const Navigation = styled.div`
-  background-color: var(--pri-bg-color);
-  color: var(--pri-fg-color);
-  opacity: 50%;
+  background-color: rgb(var(--pri-bg-color), 0.4);
+  color: rgb(var(--pri-fg-color));
   padding: 20px;
   height: 70px;
   width: 100%;
@@ -29,8 +28,8 @@ const Logo = styled.img`
 `;
 
 const Menu = styled.img`
-  background-color: var(--pri-bg-color);
-  color: var(--pri-fg-color);
+  background-color: rgb(var(--pri-bg-color));
+  color: rgb(var(--pri-fg-color));
 
   @media (min-width: 768px) {
     display: none;
@@ -47,8 +46,8 @@ const Menu = styled.img`
 const NavLinks = styled.div<{
   isOpenOnMobile: boolean
 }>`
-  background-color: var(--pri-bg-color);
-  color: var(--pri-fg-color);
+  background-color: rgb(var(--pri-bg-color));
+  color: rgb(var(--pri-fg-color));
 
   @media (max-width: 768px) {
     transform: translate(${(props) =>
@@ -65,7 +64,7 @@ const NavLinks = styled.div<{
     align-items: center;
     position: fixed;
     transition: all 0.5s ease-in-out;
-    box-shadow: 0 0 10px var(--shadow-color)
+    box-shadow: 0 0 10px rgba(var(--shadow-color))
   }
 
   @media (min-width: 768px) {
@@ -77,8 +76,8 @@ const NavLinks = styled.div<{
 `;
 
 const CloseIcon = styled.img`
-  background-color: var(--pri-bg-color);
-  color: var(--pri-fg-color);
+  background-color: rgb(var(--pri-bg-color));
+  color: rgb(var(--pri-fg-color));
 
   @media (min-width: 768px) {
     display: none;
@@ -95,12 +94,12 @@ const CloseIcon = styled.img`
 `;
 
 const NavLink = styled.a`
-  color: var(--pri-fg-color);
+  color: rgb(var(--pri-fg-color));
   position: relative;
   text-decoration: none;
 
   &::after {
-    background: var(--sec-fg-color);
+    background: rgb(var(--sec-fg-color));
     transition: width 0.3s ease-out;
     content: "";
     position: absolute;
@@ -117,7 +116,7 @@ const NavLink = styled.a`
   }
 
   &:hover {
-    color: var(--sec-fg-color);
+    color: rgb(var(--sec-fg-color));
   }
 `;
 
