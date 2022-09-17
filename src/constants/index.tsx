@@ -3,11 +3,6 @@
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
 
-import styled from "styled-components";
+export {
 
-const AboutWrapper = styled.section`
-`;
-
-export default function About() {
-  return <></>;
 }

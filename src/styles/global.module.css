@@ -28,3 +28,8 @@
   font-family: var(--bs-font-sans-serif);
   font-size: 1.05rem;
 }
+
+html, body {
+  background-color: var(--pri-bg-color);
+  color: var(--pri-fg-color);
+}

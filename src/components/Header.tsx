@@ -11,6 +11,7 @@ import React from "react";
 const Navigation = styled.div`
   background-color: var(--pri-bg-color);
   color: var(--pri-fg-color);
+  opacity: 50%;
   padding: 20px;
   height: 70px;
   width: 100%;
