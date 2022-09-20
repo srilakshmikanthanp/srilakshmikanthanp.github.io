@@ -12,6 +12,7 @@
   --sec-fg-color: 100, 255, 218;
   --sec-bg-color: 100, 255, 218;
   --shadow-color: 0, 0, 0, 0.5;
+  --animee-color: 112,0,255, 0.7;
 }
 
 ::-webkit-scrollbar-thumb {

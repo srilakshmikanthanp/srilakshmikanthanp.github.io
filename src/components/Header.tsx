@@ -17,6 +17,7 @@ const Navigation = styled.div`
   display: flex;
   align-items: center;
   position: fixed;
+  z-index: 10000;
 `;
 
 const Logo = styled.img`
@@ -50,6 +51,8 @@ const NavLinks = styled.div<{
     transform: translate(${(props) =>
     props.isOpenOnMobile ? '0px' : '250px'
   });
+    background-color: rgb(var(--pri-bg-color));
+    color: rgb(var(--pri-fg-color));
     justify-content: center;
     flex-direction: column;
     height: 100vh;
