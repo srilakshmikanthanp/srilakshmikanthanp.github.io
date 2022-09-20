@@ -4,7 +4,8 @@
 // https://opensource.org/licenses/MIT
 
 import { Intro, About, Tools, Projects, Contact } from "./sections";
-import { Header, Footer } from "./components";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import styled from "styled-components";

@@ -7,7 +7,7 @@ import ReactTooltip from 'react-tooltip';
 import styled from 'styled-components';
 import React from 'react';
 
-interface ToolProps extends React.ImgHTMLAttributes<HTMLImageElement> {
+export interface ToolProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   toolName: string;
 }
 

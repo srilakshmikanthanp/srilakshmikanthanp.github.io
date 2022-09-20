@@ -5,7 +5,7 @@
 
 import { Container, Row, Col } from "react-bootstrap";
 import styled from "styled-components";
-import { Image } from "../components";
+import Image from "../components/Image";
 
 const AboutWrapper = styled.section`
   background-color: var(--pri-bg-color);
