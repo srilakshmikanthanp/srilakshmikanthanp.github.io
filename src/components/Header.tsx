@@ -46,9 +46,6 @@ const Menu = styled.img`
 const NavLinks = styled.div<{
   isOpenOnMobile: boolean
 }>`
-  background-color: rgb(var(--pri-bg-color));
-  color: rgb(var(--pri-fg-color));
-
   @media (max-width: 768px) {
     transform: translate(${(props) =>
     props.isOpenOnMobile ? '0px' : '250px'
