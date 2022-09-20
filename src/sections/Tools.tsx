@@ -77,8 +77,8 @@ export default function Tools() {
       toolLogo: "https://img.icons8.com/color/48/000000/typescript.png"
     },
     {
-      toolName: "SQL",
-      toolLogo: "https://img.icons8.com/color/48/000000/sql.png"
+      toolName: "MySQL",
+      toolLogo: "https://img.icons8.com/color/48/000000/mysql-logo.png"
     },
     {
       toolName: "Bootstrap",
@@ -131,6 +131,22 @@ export default function Tools() {
     {
       toolName: "VScode",
       toolLogo: "https://img.icons8.com/color/48/000000/visual-studio-code-2019.png"
+    },
+    {
+      toolName: "Docker",
+      toolLogo: "https://img.icons8.com/color/48/000000/docker.png"
+    },
+    {
+      toolName: "Linux",
+      toolLogo: "https://img.icons8.com/color/48/000000/linux--v1.png"
+    },
+    {
+      toolName: "TimescaleDB",
+      toolLogo: "https://www.timescale.com/static/170c20ad89a8d3596d754d8ed6f5cb22/TimescaleLogoSocialMedia1Svg.svg"
+    },
+    {
+      toolName: "PostgreSQL",
+      toolLogo: "https://img.icons8.com/color/48/000000/postgreesql.png"
     }
   ];
 
