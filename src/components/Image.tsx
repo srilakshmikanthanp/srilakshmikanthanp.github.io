@@ -4,7 +4,6 @@
 // https://opensource.org/licenses/MIT
 
 import styled, { keyframes } from "styled-components";
-import React from "react";
 
 const ZoomInOutAnimation = keyframes`
   0% {
@@ -20,7 +19,7 @@ const ZoomInOutAnimation = keyframes`
   }
 `;
 
-const ImageWrapper = styled.img`
+const Image = styled.img`
   max-height: min(320px, 100%);
   max-width: min(320px, 100%);
   display: flex;
@@ -28,7 +27,7 @@ const ImageWrapper = styled.img`
   align-items: center;
   justify-content: center;
   margin: auto;
-  border-radius: 25px;
+  border-radius: 10px;
   box-shadow: 0 0 10 rgba(var(--shadow-color));
 
   &:hover {
@@ -36,8 +35,4 @@ const ImageWrapper = styled.img`
   }
 `;
 
-export default function Image(props: React.ImgHTMLAttributes<HTMLImageElement>) {
-  return (
-    <ImageWrapper {...props} />
-  );
-}
+export default Image;

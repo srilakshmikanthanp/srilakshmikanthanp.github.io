@@ -3,10 +3,10 @@
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
 
-import Project, { ProjectProps } from "../components/Project";
-import { Container } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import styled from "styled-components";
-import React, { useEffect } from "react";
+import Image from "../components/Image";
+import BtnLink from "../components/BtnLink";
 
 const ProjectsWrapper = styled.div`
   background-color: var(--pri-bg-color);
@@ -18,44 +18,39 @@ const ProjectsWrapper = styled.div`
   justify-content: center;
 `;
 
-const Header = styled.header`
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-`;
-
-const Body = styled.div`
-  justify-content: center;
-  display: flex;
-  gap: 20px;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-`;
-
 export default function Projects() {
-  // Tools and images
-  const [projects, setProjects]  = React.useState<Array<ProjectProps>>([]);
-
-  // effect
-  useEffect(() => {
-    fetch('/tools/tools.json').then(async res => setProjects(await res.json()));
-  });
-
-  // Render
   return (
     <ProjectsWrapper id="projects">
       <Container>
-        <Header>
-          <h3 className="text-center">Projects</h3>
-        </Header>
-        <Body>
-          {projects.map((project, index) => (
-            <Project key={index} {...project} />
-          ))}
-        </Body>
+        <Row className="justify-content-center gx-5">
+          <Col md={12} lg={6}
+            className="p-3 d-flex flex-column justify-content-center order-last order-lg-first"
+          >
+            <h3 className="text-center text-lg-start">
+              Projects
+            </h3>
+            <hr className="w-100"/>
+            <p className="text-center text-lg-start">
+              I Usually update my projects on my GitHub Repo. You can check
+              them out by clicking the button below.
+            </p>
+            <BtnLink
+              href="https://github.com/srilakshmikanthanp?tab=repositories&sort=name"
+              className="mx-md-auto mx-lg-0"
+              target="_blank"
+            >
+              Visit Github
+            </BtnLink>
+          </Col>
+          <Col md={12} lg={5}
+            className="p-3 d-flex flex-column justify-content-center order-first order-lg-last"
+          >
+            <Image
+              src={require('./../assets/images/project.svg').default}
+              alt="Projects"
+            />
+          </Col>
+        </Row>
       </Container>
     </ProjectsWrapper>
   );
