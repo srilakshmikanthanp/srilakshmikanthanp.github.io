@@ -31,15 +31,16 @@ export default function Projects() {
             </h3>
             <hr className="w-100"/>
             <p className="text-center text-lg-start">
-              I Usually update my projects on my GitHub Repo. You can check
-              them out by clicking the button below.
+              You can find my most of projects in github. I have worked on some
+              of the project for the problem that I have faced in my day to day
+              life.
             </p>
             <BtnLink
               href="https://github.com/srilakshmikanthanp?tab=repositories&sort=name"
-              className="mx-md-auto mx-lg-0"
+              className="mx-auto mx-lg-0"
               target="_blank"
             >
-              Visit Github
+              Visit Github 🔎
             </BtnLink>
           </Col>
           <Col md={12} lg={5}
