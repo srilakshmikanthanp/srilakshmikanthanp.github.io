@@ -1,5 +1,6 @@
 {
   "name": "srilakshmikanthanp.github.io",
+  "homepage": "https://srilakshmikanthanp.github.io/",
   "version": "2.0.0",
   "private": true,
   "dependencies": {
@@ -29,7 +30,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -51,6 +54,7 @@
   },
   "devDependencies": {
     "@types/feather-icons": "^4.7.0",
-    "@types/styled-components": "^5.1.26"
+    "@types/styled-components": "^5.1.26",
+    "gh-pages": "^4.0.0"
   }
 }
