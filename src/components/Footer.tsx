@@ -34,7 +34,7 @@ export default function Footer() {
         </div>
         <div className="d-flex justify-content-center">
           <p className="p-2">
-            Copyright &copy; {new Date().getFullYear()} Sri Lakshmi Kanthan
+            Copyright &copy; {new Date().getFullYear()} Sri Lakshmi Kanthan P
           </p>
         </div>
       </Container>
