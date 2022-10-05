@@ -49,9 +49,9 @@ export default function About() {
             className="p-3 d-flex flex-column justify-content-center order-first order-lg-last"
           >
             <Image
-              src={require('./../assets/images/me.jpeg')}
+              src={require('./../assets/images/me.jpg')}
               alt="Sri Lakshmi Kanthan"
-              style={{ width: '250px', height: '250px' }}
+              style={{ width: '280px', height: '280px' }}
             />
           </Col>
         </Row>
