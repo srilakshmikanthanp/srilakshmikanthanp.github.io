@@ -33,7 +33,7 @@ export default function Tools() {
   // effect
   useEffect(() => {
     fetch('/tools/tools.json').then(async res => setTools(await res.json()));
-  });
+  }, []);
 
   // Render
   return (
