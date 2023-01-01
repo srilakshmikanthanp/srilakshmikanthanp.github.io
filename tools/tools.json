@@ -1,122 +1,122 @@
 [
   {
     "toolName": "C",
-    "src": "https://img.icons8.com/color/48/000000/c-programming.png"
+    "src": "/assets/images/clang-logo.png"
   },
   {
     "toolName": "C++",
-    "src": "https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"
+    "src": "/assets/images/cpp.png"
   },
   {
     "toolName": "NASM",
-    "src": "https://www.nasm.us/images/nasm.png"
+    "src": "/assets/images/nasm.png"
   },
   {
     "toolName": "Java",
-    "src": "https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png"
+    "src": "/assets/images/java.png"
   },
   {
     "toolName": "Kotlin",
-    "src": "https://img.icons8.com/color/48/000000/kotlin.png"
+    "src": "/assets/images/kotlin.png"
   },
   {
     "toolName": "Golang",
-    "src": "https://img.icons8.com/color/48/000000/golang.png"
+    "src": "/assets/images/golang.png"
   },
   {
     "toolName": "Python",
-    "src": "https://img.icons8.com/color/48/000000/python.png"
+    "src": "/assets/images/python.png"
   },
   {
     "toolName": "Nodejs",
-    "src": "https://img.icons8.com/color/48/000000/nodejs.png"
+    "src": "/assets/images/nodejs.png"
   },
   {
     "toolName": "HTML",
-    "src": "https://img.icons8.com/color/48/000000/html-5--v1.png"
+    "src": "/assets/images/html-5.png"
   },
   {
     "toolName": "CSS",
-    "src": "https://img.icons8.com/color/48/000000/css3.png"
+    "src": "/assets/images/css3.png"
   },
   {
     "toolName": "JavaScript",
-    "src": "https://img.icons8.com/color/48/000000/javascript--v1.png"
+    "src": "/assets/images/javascript.png"
   },
   {
     "toolName": "TypeScript",
-    "src": "https://img.icons8.com/color/48/000000/typescript.png"
+    "src": "/assets/images/typescript.png"
   },
   {
     "toolName": "MySQL",
-    "src": "https://img.icons8.com/color/48/000000/mysql-logo.png"
+    "src": "/assets/images/mysql.png"
   },
   {
     "toolName": "Bootstrap",
-    "src": "https://img.icons8.com/color/48/000000/bootstrap.png"
+    "src": "/assets/images/bootstrap.png"
   },
   {
     "toolName": "JQuery",
-    "src": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/JQuery_logo.svg/524px-JQuery_logo.svg.png"
+    "src": "/assets/images/jquery.png"
   },
   {
     "toolName": "JQuery UI",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/JQuery_UI-Logo.svg/512px-JQuery_UI-Logo.svg.png"
+    "src": "/assets/images/jquery-ui.png"
   },
   {
     "toolName": "Swing",
-    "src": "https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png"
+    "src": "/assets/images/java.png"
   },
   {
     "toolName": "Javafx",
-    "src": "https://upload.wikimedia.org/wikipedia/en/c/cc/JavaFX_Logo.png"
+    "src": "/assets/images/JavaFX.png"
   },
   {
     "toolName": "React",
-    "src": "https://img.icons8.com/color/48/000000/react-native.png"
+    "src": "/assets/images/react.svg"
   },
   {
     "toolName": "Redux",
-    "src": "https://img.icons8.com/color/48/000000/redux.png"
+    "src": "/assets/images/redux.png"
   },
   {
     "toolName": "React Router",
-    "src": "https://seeklogo.com/images/R/react-router-logo-AB5BFB638F-seeklogo.com.png"
+    "src": "/assets/images/react-router.png"
   },
   {
     "toolName": "Flask",
-    "src": "https://img.icons8.com/color/48/000000/flask.png"
+    "src": "/assets/images/flask.png"
   },
   {
     "toolName": "Expressjs",
-    "src": "https://img.icons8.com/color/48/000000/express.png"
+    "src": "/assets/images/express.png"
   },
   {
     "toolName": "Git",
-    "src": "https://img.icons8.com/color/48/000000/git.png"
+    "src": "/assets/images/git.png"
   },
   {
     "toolName": "Github",
-    "src": "https://img.icons8.com/color/48/000000/github--v1.png"
+    "src": "/assets/images/github.png"
   },
   {
     "toolName": "VScode",
-    "src": "https://img.icons8.com/color/48/000000/visual-studio-code-2019.png"
+    "src": "/assets/images/vscode.png"
   },
   {
     "toolName": "Docker",
-    "src": "https://img.icons8.com/color/48/000000/docker.png"
+    "src": "/assets/images/docker.png"
   },
   {
     "toolName": "Linux",
-    "src": "https://img.icons8.com/color/48/000000/linux--v1.png"
+    "src": "/assets/images/linux.png"
   },
   {
     "toolName": "TimescaleDB",
-    "src": "https://www.timescale.com/static/170c20ad89a8d3596d754d8ed6f5cb22/TimescaleLogoSocialMedia1Svg.svg"
+    "src": "/assets/images/timescaleDB.svg"
   },
   {
     "toolName": "PostgreSQL",
-    "src": "https://img.icons8.com/color/48/000000/postgreesql.png"
+    "src": "/assets/images/postgreesql.png"
   }
 ]
