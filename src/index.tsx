@@ -7,11 +7,11 @@ import "./styles/global.module.css";
 import ReactDOM from "react-dom";
 import App from "./App";
 
-// Root Element
+// Get the Root Element
 const rootElement = document.getElementById('root');
 
 // Element
 const element = <App />;
 
-// Render
+// Render Element
 ReactDOM.render(element, rootElement);

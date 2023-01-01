@@ -6,7 +6,7 @@
 import * as feather from "feather-icons";
 
 /**
- * Converts the Svg Feather to Path
+ * Converts the Svg Feather to Base 64
  *
  * @param name image name
  * @returns path
