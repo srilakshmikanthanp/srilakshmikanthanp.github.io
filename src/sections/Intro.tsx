@@ -42,7 +42,7 @@ const Footer = styled.footer`
 
 export default function Intro() {
   // Type Writer words
-  const words = ['I am a Student !', 'I am a Programmer !', 'I am a Stupid 😂'];
+  const words = ['I am a Student !', 'I am a Programmer !'];
 
   // Type writer
   const typeWriter = (
