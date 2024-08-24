@@ -22,36 +22,41 @@ export default function About() {
     <AboutWrapper id="about">
       <Container>
         <Row className="justify-content-center gx-5">
-          <Col md={12} lg={6}
+          <Col
+            md={12}
+            lg={6}
             className="p-3 d-flex flex-column justify-content-center order-last order-lg-first"
           >
-            <h3 className="text-center text-lg-start">
-              About
-            </h3>
-            <hr className="w-100"/>
+            <h3 className="text-center text-lg-start">About</h3>
+            <hr className="w-100" />
             <p className="text-center text-lg-start">
-              Hello, I am Sri Lakshmi Kanthan a student from TamilNadu,
-              Currently studying Information Technology at Anna University,
-              Trichy. I am a self-taught developer and I love to learn new
-              things. Other than programming I love math and physics.
-              <br /><br />
-              I was born in Kumbakonam, which is in Thanjavur. I have
-              completed my schooling in little flower higher secondary
-              school. After that, I joined Information Technology at Anna
-              University (University College of engineering), Trichy.
-              <br /><br />
-              Since 11<sup>th</sup> std I'm in love with Programming.
-              I started with C After that I learned Some languages and
-              tools and going to learn new things.
+              Hello, I'm Sri Lakshmi Kanthan, a student from Tamil Nadu. I
+              graduated with a degree in Information Technology from Anna
+              University, Trichy. As a self-taught developer, I'm passionate
+              about learning new things. Besides programming, I have a strong
+              interest in math and physics.
+              <br />
+              <br />
+              I was born in Kumbakonam, located in Thanjavur, Tamil Nadu, India.
+              I completed my schooling at Little Flower Higher Secondary School
+              before pursuing a degree in Information Technology at Anna
+              University (University College of Engineering), Trichy.
+              <br />
+              <br />
+              I've been passionate about programming since 11<sup>th</sup> grade, 
+              starting with C. Since then, I've learned several languages
+              and tools, and I'm always eager to explore new technologies.
             </p>
           </Col>
-          <Col md={12} lg={5}
+          <Col
+            md={12}
+            lg={5}
             className="p-3 d-flex flex-column justify-content-center order-first order-lg-last"
           >
             <Image
-              src={require('./../assets/images/me.jpg')}
+              src={require("./../assets/images/me.jpg")}
               alt="Sri Lakshmi Kanthan"
-              style={{ width: '280px', height: '280px' }}
+              style={{ width: "280px", height: "280px" }}
             />
           </Col>
         </Row>

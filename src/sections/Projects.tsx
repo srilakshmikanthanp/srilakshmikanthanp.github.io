@@ -23,17 +23,16 @@ export default function Projects() {
     <ProjectsWrapper id="projects">
       <Container>
         <Row className="justify-content-center gx-5">
-          <Col md={12} lg={6}
+          <Col
+            md={12}
+            lg={6}
             className="p-3 d-flex flex-column justify-content-center order-last order-lg-first"
           >
-            <h3 className="text-center text-lg-start">
-              Projects
-            </h3>
-            <hr className="w-100"/>
+            <h3 className="text-center text-lg-start">Projects</h3>
+            <hr className="w-100" />
             <p className="text-center text-lg-start">
-              You can find my most of projects in github. I have worked on some
-              of the project for the problem that I have faced in my day to day
-              life.
+              You can find most of my projects on GitHub. Many of these projects
+              address problems I’ve encountered in my daily life.
             </p>
             <BtnLink
               href="https://github.com/srilakshmikanthanp?tab=repositories&sort=name"
@@ -43,11 +42,13 @@ export default function Projects() {
               Visit Github 🔎
             </BtnLink>
           </Col>
-          <Col md={12} lg={5}
+          <Col
+            md={12}
+            lg={5}
             className="p-3 d-flex flex-column justify-content-center order-first order-lg-last"
           >
             <Image
-              src={require('./../assets/images/project.svg').default}
+              src={require("./../assets/images/project.svg").default}
               alt="Projects"
             />
           </Col>

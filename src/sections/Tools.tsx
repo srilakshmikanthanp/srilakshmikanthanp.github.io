@@ -4,9 +4,8 @@
 // https://opensource.org/licenses/MIT
 
 import { Container, Row, Col } from "react-bootstrap";
-import Tool, { ToolProps } from "../components/Tool";
-import styled from 'styled-components';
-import React, { useEffect } from "react";
+import Image from "../components/Image";
+import styled from "styled-components";
 
 const ToolsWrapper = styled.div`
   background-color: var(--pri-bg-color);
@@ -18,45 +17,34 @@ const ToolsWrapper = styled.div`
   justify-content: center;
 `;
 
-const ToolViewer = styled.div`
-  grid-template-columns: repeat(5, 1fr);
-  display: grid;
-  gap: 10px;
-  justify-items: center;
-  align-items: center;
-`;
-
 export default function Tools() {
-  // Tools and images
-  const [tools, setTools]  = React.useState<Array<ToolProps>>([]);
-
-  // effect
-  useEffect(() => {
-    fetch('/tools/tools.json').then(async res => setTools(await res.json()));
-  }, []);
-
   // Render
   return (
     <ToolsWrapper id="tools">
       <Container>
         <Row className="justify-content-center gx-5">
-          <Col md={12} lg={5} className="p-3 d-flex flex-column justify-content-center" >
-            <ToolViewer>
-              {tools.map((tool, index) => (
-                <Tool key={index} toolName={tool.toolName} src={tool.src} />
-              ))}
-            </ToolViewer>
+          <Col
+            md={12}
+            lg={5}
+            className="p-3 d-flex flex-column justify-content-center order-first order-lg-first"
+          >
+            <Image
+              src={require("./../assets/images/tech.png")}
+              alt="Tech Stacks"
+            />
           </Col>
-          <Col md={12} lg={6} className="p-3 d-flex flex-column justify-content-center" >
-            <h3 className="text-center text-lg-start">
-              Tools
-            </h3>
+          <Col
+            md={12}
+            lg={6}
+            className="p-3 d-flex flex-column justify-content-center"
+          >
+            <h3 className="text-center text-lg-start">Tools</h3>
             <hr className="w-100" />
             <p className="text-center text-lg-start">
-              I learn new things every day and I can come up with the new tool
-              in a short time But Here is the some of them I used. I'm not
-              Master at all but I can work with all of them with browser tab
-              for docs 😂
+              I’m not bound to any particular technology; I choose the best
+              tools for each project and learn them well. I’m always eager to
+              grow my skills. I have experience in desktop apps, Android apps,
+              full-stack development, socket programming, and more.
             </p>
           </Col>
         </Row>
