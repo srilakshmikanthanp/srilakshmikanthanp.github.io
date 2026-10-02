@@ -22,9 +22,10 @@ export default function About() {
       </p>
       <p>
         I wrote my first program in <Highlight>C</Highlight> in 11<sup>th</sup>
-        grade to generate the Fibonacci sequence, and what started as a
-        hobby eventually became my career. Outside of software, I enjoy learning
-        <Highlight>math</Highlight> and <Highlight>physics</Highlight>.
+        grade, on pen and paper, when my computer teacher taught us a program to
+        generate the Fibonacci series. What started as a hobby eventually became
+        my career. Outside of software, I enjoy learning <Highlight>math</Highlight>
+        and <Highlight>physics</Highlight>.
       </p>
       <p>
         I don't limit myself to any particular area of software development.
