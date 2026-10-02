@@ -23,17 +23,14 @@ export default function About() {
       <p>
         I wrote my first program in <Highlight>C</Highlight> in 11<sup>th</sup>{" "}
         grade, and what started as a hobby eventually became my career.
-      </p>
-      <p>
         Outside of software, I enjoy learning <Highlight>math</Highlight> and{" "}
-        <Highlight>physics</Highlight>. I enjoy understanding how things work
-        from first principles.
+        <Highlight>physics</Highlight>.
       </p>
       <p>
-        I don't tie myself to any particular tool. When a problem comes up, I
-        look for the best way to solve it, and if the right tool doesn't
-        exist, I build it. Most of my work lives on GitHub, and much of it
-        begins with a problem I ran into myself.
+        I don't limit myself to any particular area of software development.
+        I enjoy exploring different fields and working on projects that
+        interest me. Most of my work lives on GitHub, and much of it starts
+        with a problem I ran into myself.
       </p>
       <GithubCard />
     </section>
