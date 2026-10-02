@@ -5,10 +5,21 @@
  * https://opensource.org/licenses/MIT
  */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@400&display=swap');
+@import "tailwindcss";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@theme {
+  --color-navy: #0a192f;
+  --color-navy-light: #112240;
+  --color-navy-lightest: #233554;
+  --color-slate: #8892b0;
+  --color-slate-light: #a8b2d1;
+  --color-slate-lightest: #ccd6f6;
+  --color-slate-white: #e6f1ff;
+  --color-accent: #64ffda;
+
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "Roboto Mono", ui-monospace, monospace;
+}
 
 @layer base {
   html {

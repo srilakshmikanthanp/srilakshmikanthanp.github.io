@@ -12,4 +12,4 @@ export const SOCIAL_LINKS = [
   { name: "Twitter", icon: "twitter", href: "https://twitter.com/itsmekanth" },
   { name: "Instagram", icon: "instagram", href: "https://www.instagram.com/srilakshmikanthanp/" },
   { name: "Facebook", icon: "facebook", href: "https://www.facebook.com/srilakshmikanthanp" },
-];
+] as const;

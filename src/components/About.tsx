@@ -3,9 +3,10 @@
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
 
+import type { ReactNode } from "react";
 import GithubCard from "./GithubCard";
 
-const Highlight = ({ children }: { children: React.ReactNode }) => (
+const Highlight = ({ children }: { children: ReactNode }) => (
   <span className="text-slate-lightest">{children}</span>
 );
 

@@ -5,8 +5,10 @@
 
 import * as feather from "feather-icons";
 
+export type IconName = keyof typeof feather.icons;
+
 export interface IconProps {
-  name: string;
+  name: IconName;
   size?: number;
 }
 
