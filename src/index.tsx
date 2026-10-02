@@ -3,15 +3,12 @@
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
 
-import "./styles/global.module.css";
-import ReactDOM from "react-dom";
+import "./index.css";
+import { createRoot } from "react-dom/client";
 import App from "./App";
 
 // Get the Root Element
-const rootElement = document.getElementById('root');
-
-// Element
-const element = <App />;
+const rootElement = document.getElementById('root') as HTMLElement;
 
 // Render Element
-ReactDOM.render(element, rootElement);
+createRoot(rootElement).render(<App />);

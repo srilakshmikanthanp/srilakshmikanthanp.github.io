@@ -3,50 +3,22 @@
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
 
-import { Intro, About, Tools, Projects, Contact } from "./sections";
-import Header from "./components/Header";
+import Sidebar from "./components/Sidebar";
+import About from "./components/About";
 import Footer from "./components/Footer";
-import Particles from "react-particles";
-import { loadFull } from "tsparticles";
-import styled from "styled-components";
-import React from "react";
+import Spotlight from "./components/Spotlight";
 
-// Particles
-const TsParticles = styled(Particles)`
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  z-index: 0;
-`;
-
-// Main
-const Main = styled.main`
-  position: relative;
-  z-index: 1;
-`;
-
-/**
- * Application Component
- */
 export default function App() {
-  // content
-  const Content = () => (
-    <Main>
-      <Header />
-      <Intro />
-      <About />
-      <Tools />
-      <Projects />
-      <Contact />
-      <Footer />
-    </Main>
-  );
-
-  // Render
   return (
-    <React.Fragment>
-      <TsParticles url="/particles-presets/particles.json" init={loadFull} />
-      <Content />
-    </React.Fragment>
+    <>
+      <Spotlight />
+      <div className="relative mx-auto max-w-screen-xl px-6 md:px-12 lg:flex lg:min-h-screen lg:items-center lg:justify-between lg:gap-4 lg:px-24">
+        <Sidebar />
+        <main className="flex flex-col gap-16 lg:w-1/2 lg:py-24">
+          <About />
+          <Footer />
+        </main>
+      </div>
+    </>
   );
 }
