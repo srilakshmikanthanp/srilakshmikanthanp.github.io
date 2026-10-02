@@ -1,6 +1,6 @@
 # Personal website
 
-This is the source code for my personal website, which is hosted at [https://srilakshmikanthanp.github.io](https://srilakshmikanthanp.github.io).
+This is the source code for my personal website, which is hosted at [https://srilakshmikanthanp.com](https://srilakshmikanthanp.com).
 
 ## License
 

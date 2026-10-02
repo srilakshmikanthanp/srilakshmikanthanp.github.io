@@ -12,8 +12,10 @@ const BtnLink = styled.a`
   align-items: center;
   justify-content: center;
   color: rgb(var(--pri-fg-color)) !important;
-  width: 150px;
-  height: 50px;
+  min-width: 150px;
+  min-height: 50px;
+  padding: 0 24px;
+  width: fit-content;
   text-decoration: none;
 
   &:hover {

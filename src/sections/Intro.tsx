@@ -42,7 +42,7 @@ const Footer = styled.footer`
 
 export default function Intro() {
   // Type Writer words
-  const words = ['Student', 'Software Engineer'];
+  const words = ['Software Engineer', 'Student'];
 
   // Type writer
   const typeWriter = (
@@ -54,7 +54,7 @@ export default function Intro() {
   return (
     <IntroWrapper id="intro">
       <Header>
-        Hi! This is,
+        Hi, I'm
       </Header>
       <Body>
         Sri Lakshmi Kanthan

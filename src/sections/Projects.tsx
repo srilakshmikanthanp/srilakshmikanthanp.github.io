@@ -31,15 +31,15 @@ export default function Projects() {
             <h3 className="text-center text-lg-start">Projects</h3>
             <hr className="w-100" />
             <p className="text-center text-lg-start">
-              You can find most of my projects on GitHub. Many of these projects
-              address problems I’ve encountered in my daily life.
+              Most of my work lives on GitHub, and much of it starts with a
+              problem I ran into myself.
             </p>
             <BtnLink
               href="https://github.com/srilakshmikanthanp?tab=repositories&sort=name"
               className="mx-auto mx-lg-0"
               target="_blank"
             >
-              Visit Github 🔎
+              View on GitHub 🔎
             </BtnLink>
           </Col>
           <Col
@@ -48,8 +48,9 @@ export default function Projects() {
             className="p-3 d-flex flex-column justify-content-center order-first order-lg-last"
           >
             <Image
-              src={require("./../assets/images/project.svg").default}
+              src={require("./../assets/images/projects.png")}
               alt="Projects"
+              style={{ maxWidth: "100%", maxHeight: "none" }}
             />
           </Col>
         </Row>

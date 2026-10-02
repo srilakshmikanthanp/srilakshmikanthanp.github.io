@@ -29,8 +29,9 @@ export default function Tools() {
             className="p-3 d-flex flex-column justify-content-center order-first order-lg-first"
           >
             <Image
-              src={require("./../assets/images/tech.png")}
+              src={require("./../assets/images/tools.png")}
               alt="Tech Stacks"
+              style={{ maxWidth: "100%", maxHeight: "none" }}
             />
           </Col>
           <Col
@@ -41,10 +42,9 @@ export default function Tools() {
             <h3 className="text-center text-lg-start">Tools</h3>
             <hr className="w-100" />
             <p className="text-center text-lg-start">
-              I’m not bound to any particular technology; I choose the best
-              tools for each project and learn them well. I’m always eager to
-              grow my skills. I have experience in desktop apps, Android apps,
-              full-stack development, socket programming, and more.
+              I don't tie myself to any particular tool. When a problem comes
+              up, I look for the best tool or approach to solve it, and if
+              nothing fits, I build what I need.
             </p>
           </Col>
         </Row>

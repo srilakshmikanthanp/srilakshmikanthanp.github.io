@@ -30,22 +30,19 @@ export default function About() {
             <h3 className="text-center text-lg-start">About</h3>
             <hr className="w-100" />
             <p className="text-center text-lg-start">
-              Hello, I'm Sri Lakshmi Kanthan, a student from Tamil Nadu. I
-              graduated with a degree in Information Technology from Anna
-              University, Trichy. As a self-taught developer, I'm passionate
-              about learning new things. Besides programming, I have a strong
-              interest in math and physics.
+              I'm Sri Lakshmi Kanthan, a software engineer from Kumbakonam,
+              Tamil Nadu, India. I studied at Little Flower Higher Secondary
+              School, Kumbakonam, and later earned a degree in Information
+              Technology from the University College of Engineering, Anna
+              University, Trichy.
               <br />
               <br />
-              I was born in Kumbakonam, located in Thanjavur, Tamil Nadu, India.
-              I completed my schooling at Little Flower Higher Secondary School
-              before pursuing a degree in Information Technology at Anna
-              University (University College of Engineering), Trichy.
+              I wrote my first program in C in 11<sup>th</sup> grade, and what
+              started as a hobby eventually became my career.
               <br />
               <br />
-              I've been passionate about programming since 11<sup>th</sup> grade, 
-              starting with C. Since then, I've learned several languages
-              and tools, and I'm always eager to explore new technologies.
+              Outside of software, I enjoy learning math and physics. I enjoy
+              understanding how things work from first principles.
             </p>
           </Col>
           <Col
