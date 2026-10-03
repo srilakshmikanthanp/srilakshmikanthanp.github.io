@@ -18,7 +18,7 @@ export default function Profile() {
         Sri Lakshmi Kanthan
       </h1>
       <p className="mt-3 text-lg text-slate-lightest">Software Engineer</p>
-      <p className="mt-4 text-slate">Curious about how things work and why they work.</p>
+      <p className="mt-4 text-slate-light">Curious about how things work and why they work.</p>
       <ul className="mt-8 flex gap-5" aria-label="Social links">
         {SOCIAL_LINKS.map((link) => (
           <li key={link.name}>
