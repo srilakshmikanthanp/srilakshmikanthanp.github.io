@@ -12,7 +12,7 @@ const Highlight = ({ children }: { children: ReactNode }) => (
 
 export default function About() {
   return (
-    <section className="flex flex-col gap-4" aria-label="About">
+    <section className="space-y-4" aria-label="About">
       <p>
         I'm Sri Lakshmi Kanthan, a software engineer from{" "}
         <Highlight>Kumbakonam, Tamil Nadu, India</Highlight>. I studied at{" "}

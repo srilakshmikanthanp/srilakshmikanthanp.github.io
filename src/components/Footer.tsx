@@ -3,15 +3,15 @@
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
 
-export default function Footer() {
+export default function Footer({ className = "" }: { className?: string }) {
   return (
-    <footer className="pb-12 text-sm text-slate">
+    <footer className={`text-sm text-slate ${className}`}>
       Design inspired by{" "}
       <a
         href="https://brittanychiang.com/"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-slate-lightest transition hover:text-accent"
+        className="text-slate-lightest hover:text-accent"
       >
         Brittany Chiang
       </a>
