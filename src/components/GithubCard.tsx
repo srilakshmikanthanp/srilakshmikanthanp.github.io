@@ -12,7 +12,7 @@ export default function GithubCard() {
       href={GITHUB_URL}
       target="_blank"
       rel="noopener noreferrer"
-      className="group flex items-center gap-4 rounded-lg border border-navy-lightest p-5 hover:bg-navy-light"
+      className="group flex items-center gap-4 rounded-lg border border-navy-lightest bg-navy p-5 hover:bg-navy-light"
     >
       <span className="text-accent">
         <Icon name="github" size={28} />

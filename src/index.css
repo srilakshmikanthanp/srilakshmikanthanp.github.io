@@ -34,3 +34,15 @@
     @apply bg-accent/20 text-slate-white;
   }
 }
+
+/* Graph paper dots, only visible around the mouse */
+@utility spotlight-dots {
+  background-image: radial-gradient(rgba(136, 146, 176, 0.35) 1px, transparent 1px);
+  background-size: 24px 24px;
+  mask-image: radial-gradient(400px at var(--x) var(--y), black, transparent);
+}
+
+/* Soft teal glow around the mouse */
+@utility spotlight-glow {
+  background: radial-gradient(600px at var(--x) var(--y), rgba(100, 255, 218, 0.07), transparent 80%);
+}
