@@ -3,22 +3,16 @@
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
 
-import Profile from "./components/Profile";
-import About from "./components/About";
-import Footer from "./components/Footer";
-import Spotlight from "./components/Spotlight";
+import About from './components/About';
+import Profile from './components/Profile';
 
 export default function App() {
   return (
-    <>
-      <Spotlight />
-      <div className="relative mx-auto flex max-w-6xl flex-col gap-12 px-6 py-16 lg:min-h-screen lg:flex-row lg:items-center lg:gap-24">
-        <Profile />
-        <main className="lg:flex-1">
-          <About />
-          <Footer className="mt-12 lg:hidden" />
-        </main>
+    <main className="mx-auto flex min-h-screen max-w-6xl flex-col gap-12 px-6 py-16 lg:flex-row lg:items-center lg:gap-24">
+      <Profile />
+      <div className="lg:flex-1">
+        <About />
       </div>
-    </>
+    </main>
   );
 }

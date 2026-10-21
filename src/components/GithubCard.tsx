@@ -3,29 +3,25 @@
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
 
-import Icon from "./Icon";
-import { GITHUB_URL } from "../constants";
+import { LuArrowUpRight, LuGithub } from 'react-icons/lu';
+import { GITHUB_URL } from '../constants';
+import ExternalLink from './ExternalLink';
 
 export default function GithubCard() {
   return (
-    <a
+    <ExternalLink
       href={GITHUB_URL}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="group flex items-center gap-4 rounded-lg border border-navy-lightest bg-navy p-5 hover:bg-navy-light"
+      className="group flex items-center gap-4 rounded-2xl border border-line bg-surface p-5 shadow-lg transition hover:-translate-y-px"
     >
-      <span className="text-accent">
-        <Icon name="github" size={28} />
+      <span className="grid size-11 shrink-0 place-items-center rounded-lg bg-primary-soft text-2xl text-primary">
+        <LuGithub />
       </span>
       <span>
-        <span className="flex items-center gap-1.5 font-semibold text-slate-white group-hover:text-accent">
-          See my projects on GitHub
-          <Icon name="arrow-up-right" size={16} />
+        <span className="flex items-center gap-1.5 font-semibold text-fg group-hover:text-primary">
+          See my projects on GitHub <LuArrowUpRight />
         </span>
-        <span className="font-mono text-sm text-slate">
-          {GITHUB_URL.replace("https://", "")}
-        </span>
+        <span className="font-mono text-sm text-muted">{GITHUB_URL.replace('https://', '')}</span>
       </span>
-    </a>
+    </ExternalLink>
   );
 }

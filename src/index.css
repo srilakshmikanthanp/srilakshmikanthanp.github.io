@@ -4,43 +4,52 @@
  * This software is released under the MIT License.
  * https://opensource.org/licenses/MIT
  */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@400&display=swap');
-@import "tailwindcss";
 
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono&display=swap');
+@import 'tailwindcss';
+
+/* Light colors, named by purpose */
 @theme {
-  --color-navy: #0f172a;
-  --color-navy-light: #1e293b;
-  --color-navy-lightest: #334155;
-  --color-slate: #64748b;
-  --color-slate-light: #94a3b8;
-  --color-slate-lightest: #e2e8f0;
-  --color-slate-white: #e2e8f0;
-  --color-accent: #5eead4;
+  --font-sans: 'Geist', system-ui, -apple-system, sans-serif;
+  --font-mono: 'Geist Mono', ui-monospace, monospace;
+  --color-bg: #f8fafc;
+  --color-surface: #ffffff;
+  --color-fg: #0f172a;
+  --color-text: #475569;
+  --color-muted: #64748b;
+  --color-line: #e2e8f0;
+  --color-primary: #0d9488;
+  --color-primary-soft: rgb(13 148 136 / 0.1);
+}
 
-  --font-sans: "Inter", system-ui, sans-serif;
-  --font-mono: "Roboto Mono", ui-monospace, monospace;
+/* Dark colors */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #0f172a;
+    --color-surface: #1e293b;
+    --color-fg: #e2e8f0;
+    --color-text: #94a3b8;
+    --color-muted: #64748b;
+    --color-line: #334155;
+    --color-primary: #5eead4;
+    --color-primary-soft: rgb(94 234 212 / 0.1);
+  }
 }
 
 @layer base {
-  html {
-    @apply scroll-smooth;
+  :root {
+    color-scheme: light dark;
   }
 
   body {
-    @apply bg-navy text-slate-light font-sans leading-relaxed antialiased;
+    @apply bg-bg font-sans leading-relaxed text-text antialiased;
   }
 
   ::selection {
-    @apply bg-accent/20 text-slate-white;
+    @apply bg-primary/20 text-fg;
   }
-}
 
-@utility spotlight-dots {
-  background-image: radial-gradient(rgba(148, 163, 184, 0.3) 1px, transparent 1px);
-  background-size: 24px 24px;
-  mask-image: radial-gradient(400px at var(--x) var(--y), black, transparent);
-}
-
-@utility spotlight-glow {
-  background: radial-gradient(600px at var(--x) var(--y), rgba(29, 78, 216, 0.15), transparent 80%);
+  :focus-visible {
+    @apply rounded-md outline-2 outline-offset-3 outline-primary;
+  }
 }
