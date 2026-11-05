@@ -1,8 +1,7 @@
 import type { ReactNode } from 'react';
-import { LuLayoutGrid } from 'react-icons/lu';
+import { LuGithub, LuLayoutGrid } from 'react-icons/lu';
 import LinkCard from '../../components/LinkCard';
-import { LINKS_PATH } from '../../constants';
-import GithubCard from './GithubCard';
+import { GITHUB_URL, LINKS_PATH } from '../../constants';
 
 const Highlight = ({ children }: { children: ReactNode }) => <span className="text-fg">{children}</span>;
 
@@ -25,7 +24,12 @@ export default function About() {
         working on projects that interest me. Most of my work lives on GitHub, and much of it starts with a problem I
         ran into myself.
       </p>
-      <GithubCard />
+      <LinkCard
+        name="See my projects on GitHub"
+        description={GITHUB_URL.replace('https://', '')}
+        url={GITHUB_URL}
+        icon={LuGithub}
+      />
       <LinkCard
         name="More of my work"
         description="Projects, apps and ways to support me"
