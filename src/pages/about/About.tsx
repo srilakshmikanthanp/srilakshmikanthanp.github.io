@@ -1,9 +1,7 @@
-// Copyright (c) 2022 Sri Lakshmi Kanthan P
-//
-// This software is released under the MIT License.
-// https://opensource.org/licenses/MIT
-
 import type { ReactNode } from 'react';
+import { LuLayoutGrid } from 'react-icons/lu';
+import LinkCard from '../../components/LinkCard';
+import { LINKS_PATH } from '../../constants';
 import GithubCard from './GithubCard';
 
 const Highlight = ({ children }: { children: ReactNode }) => <span className="text-fg">{children}</span>;
@@ -28,6 +26,12 @@ export default function About() {
         ran into myself.
       </p>
       <GithubCard />
+      <LinkCard
+        name="More of my work"
+        description="Projects, apps and ways to support me"
+        url={LINKS_PATH}
+        icon={LuLayoutGrid}
+      />
     </section>
   );
 }

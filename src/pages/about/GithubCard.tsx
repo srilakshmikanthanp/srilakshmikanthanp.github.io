@@ -1,15 +1,10 @@
-// Copyright (c) 2022 Sri Lakshmi Kanthan P
-//
-// This software is released under the MIT License.
-// https://opensource.org/licenses/MIT
-
 import { LuArrowUpRight, LuGithub } from 'react-icons/lu';
-import { GITHUB_URL } from '../constants';
-import ExternalLink from './ExternalLink';
+import Link from '../../components/Link';
+import { GITHUB_URL } from '../../constants';
 
 export default function GithubCard() {
   return (
-    <ExternalLink
+    <Link
       href={GITHUB_URL}
       className="group flex items-center gap-4 rounded-2xl border border-line bg-surface p-5 shadow-lg transition hover:-translate-y-px"
     >
@@ -22,6 +17,6 @@ export default function GithubCard() {
         </span>
         <span className="font-mono text-sm text-muted">{GITHUB_URL.replace('https://', '')}</span>
       </span>
-    </ExternalLink>
+    </Link>
   );
 }

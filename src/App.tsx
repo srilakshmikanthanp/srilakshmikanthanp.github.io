@@ -1,18 +1,24 @@
-// Copyright (c) 2022 Sri Lakshmi Kanthan P
-//
-// This software is released under the MIT License.
-// https://opensource.org/licenses/MIT
-
-import About from './components/About';
-import Profile from './components/Profile';
+import { useEffect } from 'react';
+import { Navigate, Route, Routes, useLocation } from 'react-router';
+import { ABOUT_PATH, DONATE_PATH, LINKS_PATH } from './constants';
+import About from './pages/about';
+import Donate from './pages/donate';
+import Links from './pages/links';
 
 export default function App() {
+  const { pathname } = useLocation();
+
+  // Start each page at the top
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
-    <main className="mx-auto flex min-h-screen max-w-6xl flex-col gap-12 px-6 py-16 lg:flex-row lg:items-center lg:gap-24">
-      <Profile />
-      <div className="lg:flex-1">
-        <About />
-      </div>
-    </main>
+    <Routes>
+      <Route path={ABOUT_PATH} element={<About />} />
+      <Route path={LINKS_PATH} element={<Links />} />
+      <Route path={DONATE_PATH} element={<Donate />} />
+      <Route path="*" element={<Navigate to={ABOUT_PATH} replace />} />
+    </Routes>
   );
 }
