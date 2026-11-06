@@ -9,20 +9,26 @@ export default function About() {
   return (
     <section className="space-y-4" aria-label="About">
       <p>
-        I'm Sri Lakshmi Kanthan, a software engineer from <Highlight>Kumbakonam, Tamil Nadu, India</Highlight>. I
-        studied at <Highlight>Little Flower Higher Secondary School, Kumbakonam</Highlight>, and later earned a degree
-        in Information Technology from the{' '}
-        <Highlight>University College of Engineering, Anna University, Trichy</Highlight>.
+        I'm Sri Lakshmi Kanthan, a software engineer from <Highlight>Kumbakonam, Tamil Nadu, India</Highlight>.
       </p>
       <p>
-        I wrote my first program in <Highlight>C</Highlight> in 11<sup>th</sup> grade, on pen and paper, when my
-        computer teacher taught us a program to generate the Fibonacci series. What started as a hobby eventually became
-        my career. Outside of software, I enjoy learning <Highlight>math</Highlight> and <Highlight>physics</Highlight>.
+        I've been interested in programming since my school days. I wrote my first program in <Highlight>C</Highlight>{' '}
+        in 11<sup>th</sup> grade, on pen and paper, when our computer teacher taught us how to generate the Fibonacci
+        series. What started as a hobby eventually turned into my career.
       </p>
       <p>
-        I don't limit myself to any particular area of software development. I enjoy exploring different fields and
-        working on projects that interest me. Most of my work lives on GitHub, and much of it starts with a problem I
-        ran into myself.
+        I went on to study Information Technology at the{' '}
+        <Highlight>University College of Engineering, Anna University, Trichy</Highlight>, after completing school at{' '}
+        <Highlight>Little Flower Higher Secondary School, Kumbakonam</Highlight>.
+      </p>
+      <p>
+        I enjoy exploring different fields and working on projects that interest me rather than limiting myself to a
+        single area. Many of my projects start with problems I've encountered myself, and most of my work can be found
+        on GitHub.
+      </p>
+      <p>
+        When I'm away from software, I enjoy learning <Highlight>mathematics</Highlight> and{' '}
+        <Highlight>physics</Highlight>.
       </p>
       <LinkCard
         name="See my projects on GitHub"
